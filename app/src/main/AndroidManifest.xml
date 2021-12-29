@@ -11,10 +11,12 @@
         android:theme="@style/Theme.DMaterial">
         <activity
             android:name=".Select_branch_semester"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".LoginActivity"/>
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".LoginActivity"/>
         <activity
             android:name=".computer_sem_1_english"
             android:exported="false"
@@ -22,11 +24,11 @@
         <activity
             android:name=".computer_sem_1"
             android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".electrical_engineering"
             android:exported="false"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".mechanical_engineering"
             android:exported="false"
@@ -44,7 +46,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

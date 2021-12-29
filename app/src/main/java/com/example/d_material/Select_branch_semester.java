@@ -26,14 +26,14 @@ public class Select_branch_semester extends AppCompatActivity {
         spinner2=findViewById(R.id.Select_Sem);
         String[] branch ={"Select Branch", "Computer Engineering", "Civil Engineering", "Mechanical Engineering", "Electrical Engineering"};
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, branch);
-        spinner1.setAdapter(arrayAdapter);
+//        spinner1.setAdapter(arrayAdapter);
 
         String []semester={"Select Semester", "1", "2", "3", "4", "5", "6"};
         String position = (String) spinner1.getItemAtPosition(1);
         ArrayAdapter<String> arrayAdapter1=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, semester);
-        spinner2.setAdapter(arrayAdapter1);
+//        spinner2.setAdapter(arrayAdapter1);
         save=findViewById(R.id.Save_Button);
-        spinner2.setPrompt("Select Semester");
+//        spinner2.setPrompt("Select Semester");
 
     }
     public void click_save(View view){
