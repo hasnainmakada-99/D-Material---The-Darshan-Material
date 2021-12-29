@@ -9,58 +9,67 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Spinner spinner1;
-    Spinner spinner2;
-    Button save;
+    EditText username, password, repassword;
+    Button signup, signin;
+    DBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"#173884\">" + getString(R.string.app_name)+"</font>"));
-        spinner1=findViewById(R.id.Select_Branch);
-        spinner2=findViewById(R.id.Select_Sem);
-        String branch[]={"Select Branch", "Computer Engineering", "Civil Engineering", "Mechanical Engineering", "Electrical Engineering"};
-        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, branch);
-        spinner1.setAdapter(arrayAdapter);
 
-        String []semester={"Select Semester", "1", "2", "3", "4", "5", "6"};
-        String position = (String) spinner1.getItemAtPosition(1);
-        ArrayAdapter<String> arrayAdapter1=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, semester);
-        spinner2.setAdapter(arrayAdapter1);
-        save=findViewById(R.id.Save_Button);
-        spinner2.setPrompt("Select Semester");
+        username = (EditText) findViewById(R.id.username);
+        password = (EditText) findViewById(R.id.password);
+        repassword = (EditText) findViewById(R.id.repassword);
+        signup = (Button) findViewById(R.id.btnsignup);
+        signin = (Button) findViewById(R.id.btnsignin);
+        DB = new DBHelper(this);
 
-    }
-    public void click_save(View view){
-        String branch = (String)spinner1.getSelectedItem().toString();
-        String Semester=(String)spinner2.getSelectedItem().toString();
-        if(branch.equals("Computer Engineering")){
-            if(Semester.equals("1")){
-                Intent intent=new Intent(this, computer_sem_1.class);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String user = username.getText().toString();
+                String pass = password.getText().toString();
+                String repass = repassword.getText().toString();
+                if (user != null && pass != null) {
+                    Intent i = new Intent(MainActivity.this, Select_branch_semester.class);
+                    startActivity(i);
+                }
+                if(user.equals("")||pass.equals("")||repass.equals(""))
+                    Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                else{
+                    if(pass.equals(repass)){
+                        Boolean checkuser = DB.checkusername(user);
+                        if(checkuser==false){
+                            Boolean insert = DB.insertData(user, pass);
+                            if(insert==true){
+                                Toast.makeText(MainActivity.this, "Registered successfully", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(getApplicationContext(),Select_branch_semester.class);
+                                startActivity(intent);
+                            }else{
+                                Toast.makeText(MainActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                        else{
+                            Toast.makeText(MainActivity.this, "User already exists! please sign in", Toast.LENGTH_SHORT).show();
+                        }
+                    }else{
+                        Toast.makeText(MainActivity.this, "Passwords not matching", Toast.LENGTH_SHORT).show();
+                    }
+                } }
+        });
+
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
             }
-//            Intent intent=new Intent(this, Computer_Engineering.class);
-//            startActivity(intent);
-        }
-        else if(branch.equals("Civil Engineering")){
-            Intent intent=new Intent(this, activity_Civil_Engineering.class);
-            startActivity(intent);
-        }
-         else if(branch.equals("Mechanical Engineering")){
-            Intent intent=new Intent(this, mechanical_engineering.class);
-            startActivity(intent);
-        }
-         else if(branch.equals("Electrical Engineering")){
-            Intent intent=new Intent(this, electrical_engineering.class);
-            startActivity(intent);
-        }
-        else if(branch.equals("Select Branch")){
-            Toast.makeText(this, "Invalid Input", Toast.LENGTH_SHORT).show();
-        }
-
+        });
+//        Session session=new Session()
     }
 }

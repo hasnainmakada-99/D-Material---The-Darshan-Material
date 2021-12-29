@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".computer_sem_1">
@@ -27,4 +28,69 @@
             android:contentDescription="TODO"
             app:srcCompat="@drawable/dmaterial_logo" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/lato_itallic"
+        android:gravity="center"
+        android:text="Select Your Language"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout-1" />
+
+    <Button
+        android:id="@+id/English"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/lato_itallic"
+        android:gravity="center"
+        android:onClick="English"
+        android:text="English"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="176dp"
+        android:text="Or"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/English" />
+
+    <Button
+        android:id="@+id/gujarati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="200dp"
+        android:gravity="center"
+        android:text="ગુજરાતી"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or" />
 </androidx.constraintlayout.widget.ConstraintLayout>
