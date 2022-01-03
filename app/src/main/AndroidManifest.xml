@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.d_material">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -10,39 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DMaterial">
         <activity
-            android:name=".Select_branch_semester"
-            android:exported="false"
-            android:parentActivityName=".LoginActivity"/>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:parentActivityName=".LoginActivity"/>
-        <activity
-            android:name=".computer_sem_1_english"
-            android:exported="false"
-            android:parentActivityName=".computer_sem_1" />
-        <activity
             android:name=".computer_sem_1"
             android:exported="false"
-            android:parentActivityName=".LoginActivity" />
-        <activity
-            android:name=".electrical_engineering"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".computer_sem_1_english"
             android:exported="false"
-            android:parentActivityName=".LoginActivity" />
+            android:parentActivityName=".computer_sem_1"/>
         <activity
-            android:name=".mechanical_engineering"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".activity_Civil_Engineering"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".Computer_Engineering"
-            android:exported="false"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".LoginActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
