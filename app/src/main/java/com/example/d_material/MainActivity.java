@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<>(MainActivity.this ,android.R.layout.simple_spinner_dropdown_item, branch_name);
+        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<>(MainActivity.this ,android.R.layout.simple_list_item_1, branch_name);
         spinner1.setAdapter(arrayAdapter);
     }
 
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<>(MainActivity.this ,android.R.layout.simple_spinner_dropdown_item, semester_name);
+        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<>(MainActivity.this ,android.R.layout.simple_list_item_1, semester_name);
         spinner2.setAdapter(arrayAdapter);
     }
 
@@ -131,6 +131,9 @@ public class MainActivity extends AppCompatActivity {
             if(Semester_Name.equals("Semester 1")){
                 Intent intent= new Intent(getApplicationContext(), computer_sem_1.class);
                 startActivity(intent);
+            }
+            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester")){
+                Toast.makeText(getApplicationContext(), "Please Select Branch & Semester", Toast.LENGTH_SHORT).show();
             }
         }
         else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester")){
