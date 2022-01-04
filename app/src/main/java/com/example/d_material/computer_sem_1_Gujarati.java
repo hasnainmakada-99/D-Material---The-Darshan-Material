@@ -2,10 +2,7 @@ package com.example.d_material;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -20,27 +17,27 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class computer_sem_1_english extends AppCompatActivity {
-ListView listView;
-JSONArray result;
-ArrayList<String> Subject_Name;
+public class computer_sem_1_Gujarati extends AppCompatActivity {
+    ListView listView;
+    ArrayList<String> Subject_Name;
+    JSONArray result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_computer_sem1_english);
-        listView = findViewById(R.id.Subjects);
+        setContentView(R.layout.activity_computer_sem1_gujarati);
+        listView=findViewById(R.id.Subjects);
         Subject_Name=new ArrayList<String>();
         Get_Subject_Name();
     }
 
     // For Fetching All the Subjects Of Semester 1
     public void Get_Subject_Name(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH3, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH4, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY3);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY4);
                     Fetch_Subject_Name(result);
                 }
                 catch (Exception e){
@@ -59,17 +56,19 @@ ArrayList<String> Subject_Name;
 
     // For Fetching Subjects_Name
     public void Fetch_Subject_Name(JSONArray jo){
-        for (int i = 0; i <jo.length() ; i++) {
-            try {
+        for (int i = 0; i <jo.length() ; i++)
+        {
+            try
+            {
                 JSONObject j = jo.getJSONObject(i);
-                Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME3));
+                Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME4));
             }
-            catch (Exception e){
+            catch (Exception e)
+            {
                 e.printStackTrace();
             }
         }
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, Subject_Name);
         listView.setAdapter(arrayAdapter);
     }
-
 }

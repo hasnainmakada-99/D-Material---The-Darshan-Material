@@ -86,6 +86,7 @@
         android:layout_marginEnd="160dp"
         android:layout_marginBottom="200dp"
         android:gravity="center"
+        android:onClick="Gujarati"
         android:text="ગુજરાતી"
         android:textColor="#000000"
         android:textSize="24sp"

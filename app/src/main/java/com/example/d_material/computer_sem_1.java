@@ -18,8 +18,17 @@ Button Gujarati;
         setTitle(Html.fromHtml("<font color=\"#173884\">"+"Computer Engineering Sem 1"));
         english=findViewById(R.id.English);
     }
+
+    // For Going To English Material
     public void English(View view){
         Intent intent=new Intent(this, computer_sem_1_english.class);
         startActivity(intent);
     }
+
+    // For Going To Gujarati Material
+    public void Gujarati(View view){
+        Intent intent=new Intent(this, computer_sem_1_Gujarati.class);
+        startActivity(intent);
+    }
+
 }
