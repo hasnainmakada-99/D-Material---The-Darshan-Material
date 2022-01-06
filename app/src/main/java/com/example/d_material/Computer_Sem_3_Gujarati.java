@@ -17,29 +17,27 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class computer_sem_1_Gujarati extends AppCompatActivity {
+public class Computer_Sem_3_Gujarati extends AppCompatActivity {
     ListView listView;
-    ArrayList<String> Subject_Name;
     JSONArray result;
-
+    ArrayList<String> Subject_Name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_computer_sem1_gujarati);
-        listView=findViewById(R.id.units);
+        setContentView(R.layout.activity_computer_sem3_gujarati);
         Subject_Name=new ArrayList<String>();
-
+        listView=findViewById(R.id.units);
         Get_Subject_Name();
     }
 
     // For Fetching All the Subjects Of Semester 1
     public void Get_Subject_Name(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH4, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH6, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY4);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY6);
                     Fetch_Subject_Name(result);
                 }
                 catch (Exception e){
@@ -58,15 +56,12 @@ public class computer_sem_1_Gujarati extends AppCompatActivity {
 
     // For Fetching Subjects_Name
     public void Fetch_Subject_Name(JSONArray jo){
-        for (int i = 0; i <jo.length() ; i++)
-        {
-            try
-            {
+        for (int i = 0; i <jo.length() ; i++) {
+            try {
                 JSONObject j = jo.getJSONObject(i);
-                Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME4));
+                Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME6));
             }
-            catch (Exception e)
-            {
+            catch (Exception e){
                 e.printStackTrace();
             }
         }
