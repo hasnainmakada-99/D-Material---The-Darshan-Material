@@ -2,7 +2,10 @@ package com.example.d_material;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -67,5 +70,15 @@ public class Computer_Sem_3_Gujarati extends AppCompatActivity {
         }
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, Subject_Name);
         listView.setAdapter(arrayAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(listView.getItemAtPosition(i).toString().equals("3330701 - OPERATING SYSTEM (Gujarati)")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem_3_OS_Gujarati.class);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }

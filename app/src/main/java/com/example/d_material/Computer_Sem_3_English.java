@@ -74,6 +74,10 @@ ArrayList<String> Subject_Name;
                     Intent intent=new Intent(getApplicationContext(), Computer_Sem_3_OS_English.class);
                     startActivity(intent);
                 }
+                else if(listView.getItemAtPosition(i).toString().equals("3330702 - PROGRAMMING IN C++")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem_3_CPP_English.class);
+                    startActivity(intent);
+                }
             }
         });
     }
