@@ -13,13 +13,16 @@
         android:theme="@style/Theme.DMaterial">
         <activity
             android:name=".Computer_Sem_3_CPP_English"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Computer_Sem_3_OS_Gujarati"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Computer_Sem_3_OS_English"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Select_Branch_Sem_Language"
             android:exported="false" />
@@ -29,14 +32,6 @@
             android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Computer_Sem_3_English"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".computer_sem_1_Gujarati"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".computer_sem_1_english"
             android:exported="false"
             android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity

@@ -1,6 +1,7 @@
 package com.example.d_material;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -23,6 +24,7 @@ import java.util.ArrayList;
 
 public class Computer_Sem_3_OS_English extends AppCompatActivity {
     ListView listView;
+    RecyclerView recyclerView;
     JSONArray result;
     ArrayList<String> Unit;
     @Override
@@ -30,6 +32,7 @@ public class Computer_Sem_3_OS_English extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_computer_sem3_os_english);
         listView=findViewById(R.id.units);
+        recyclerView=findViewById(R.id.recycle_view);
         Unit=new ArrayList<String>();
         Get_Unit_Name();
     }
@@ -68,7 +71,7 @@ public class Computer_Sem_3_OS_English extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, Unit);
+        ArrayAdapter arrayAdapter=new ArrayAdapter (getApplicationContext(), android.R.layout.simple_list_item_1, Unit);
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
