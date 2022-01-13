@@ -29,7 +29,7 @@ public class Computer_Sem_3_OS_Gujarati extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_computer_sem3_os_gujarati);
-        listView=findViewById(R.id.units);
+        listView=findViewById(R.id.recycle_view);
         Unit=new ArrayList<String>();
         Get_Unit_Name();
     }

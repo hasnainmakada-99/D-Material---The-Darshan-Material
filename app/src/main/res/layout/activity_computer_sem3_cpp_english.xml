@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/units"
+        android:id="@+id/recycle_view"
         android:layout_width="384dp"
         android:layout_height="321dp"
         android:layout_marginStart="50dp"
