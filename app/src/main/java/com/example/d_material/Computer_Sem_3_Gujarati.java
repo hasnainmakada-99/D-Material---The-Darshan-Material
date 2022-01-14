@@ -1,12 +1,16 @@
 package com.example.d_material;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.android.volley.RequestQueue;
@@ -19,17 +23,21 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Computer_Sem_3_Gujarati extends AppCompatActivity {
-    ListView listView;
+//    ListView listView;
+    RecyclerView recyclerView;
     JSONArray result;
     ArrayList<String> Subject_Name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_computer_sem3_gujarati);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Computer Engineering Semester 3"+"</font>"));
         Subject_Name=new ArrayList<String>();
-        listView=findViewById(R.id.recycle_view);
+//        listView=findViewById(R.id.recycle_view);
+        recyclerView=findViewById(R.id.recycle_view);
         Get_Subject_Name();
     }
 
@@ -68,17 +76,16 @@ public class Computer_Sem_3_Gujarati extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, Subject_Name);
-        listView.setAdapter(arrayAdapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        Custom_Adapter ad=new Custom_Adapter(Subject_Name, new Custom_Adapter.onclickitem() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(listView.getItemAtPosition(i).toString().equals("3330701 - OPERATING SYSTEM (Gujarati)")){
+            public void onitemclick(ArrayList<String> arrayList, int position, ImageView imageView) {
+                if(arrayList.get(position).toString().equals("3330701 - OPERATING SYSTEM")){
                     Intent intent=new Intent(getApplicationContext(), Computer_Sem_3_OS_Gujarati.class);
                     startActivity(intent);
                 }
             }
         });
+        recyclerView.setAdapter(ad);
     }
 }

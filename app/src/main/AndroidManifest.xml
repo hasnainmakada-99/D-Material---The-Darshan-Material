@@ -22,7 +22,7 @@
         <activity
             android:name=".Computer_Sem_3_OS_English"
             android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
+            android:parentActivityName=".Computer_Sem_3_English" />
         <activity
             android:name=".Select_Branch_Sem_Language"
             android:exported="false" />

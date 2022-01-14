@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,6 +26,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Computer_Sem_3_English extends AppCompatActivity {
 JSONArray result;
@@ -34,6 +36,7 @@ ArrayList<String> Subject_Name;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_computer_sem3_english);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Computer Engineering Semester 3"+"</font>"));
         Subject_Name=new ArrayList<String>();
         recyclerView=findViewById(R.id.recyclerView);
         Get_Subjects_Name();
@@ -79,6 +82,10 @@ ArrayList<String> Subject_Name;
                 if(arrayList.get(position).toString().equals("3330701 - OPERATING SYSTEM")){
                         Intent intent=new Intent(getApplicationContext(), Computer_Sem_3_OS_English.class);
                         startActivity(intent);
+                }
+                else if(arrayList.get(position).toString().equals("3330702 - PROGRAMMING IN C++")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem_3_CPP_English.class);
+                    startActivity(intent);
                 }
             }
         });

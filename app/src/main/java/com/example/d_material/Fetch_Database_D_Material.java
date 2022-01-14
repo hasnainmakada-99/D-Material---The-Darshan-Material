@@ -47,5 +47,10 @@ public class Fetch_Database_D_Material {
     public static final String URL_TAG_NAME9="Gujarati";
     public static final String JSON_ARRAY9="result";
 
+    // For fetching subjects of semester 3 CPP English
+    public static final String URL_PATH10="http://dmaterial.titanslab.in/Fetch_CE_Sem3_Cpp_English.php";
+    public static final String URL_TAG_NAME10="English";
+    public static final String JSON_ARRAY10="result";
+
 
 }

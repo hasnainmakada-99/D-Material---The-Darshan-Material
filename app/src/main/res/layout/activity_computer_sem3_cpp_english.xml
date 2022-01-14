@@ -6,34 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Computer_Sem_3_CPP_English">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="150dp"
-        android:fontFamily="@font/lato_itallic"
-        android:gravity="center|center_horizontal|center_vertical"
-        android:text="Select Your Unit"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_view"
-        android:layout_width="384dp"
-        android:layout_height="321dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="300dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

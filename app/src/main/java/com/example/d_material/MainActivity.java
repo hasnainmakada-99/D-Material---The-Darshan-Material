@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 //import render.animations.*;
@@ -25,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + ""+"</font>"));
+        getSupportActionBar().hide();
+//        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + ""+"</font>"));
         YoYo.with(Techniques.ZoomIn)
                 .duration(1000)
                 .repeat(0)
