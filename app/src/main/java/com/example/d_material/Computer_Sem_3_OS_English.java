@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -65,50 +66,78 @@ public class Computer_Sem_3_OS_English extends AppCompatActivity {
     }
 
     // For Fetching Subjects_Name
-    public void Fetch_Unit_Name(JSONArray jo){
-        for (int i = 0; i <jo.length() ; i++) {
+    public void Fetch_Unit_Name(JSONArray jo) {
+        for (int i = 0; i < jo.length(); i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
                 Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME8));
-            }
-            catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-       Custom_Adapter2 cd2=new Custom_Adapter2(Unit, (arrayList, position) -> {
-           if(arrayList.get(position).equals("Unit 1 - Operating System Concepts")){
-                String Url="https://drive.google.com/file/d/1UqS_TyWV-dJsVOMya4V0sfejV7vwIWtO/export?format=pdf";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
+        Custom_Adapter2 cd2=new Custom_Adapter2(Unit, new Custom_Adapter2.onclickitem() {
+            @Override
+            public void onitemclick(ArrayList<String> arrayList, int position) {
+
             }
-           else if(arrayList.get(position).equals("Unit 2 - Processor and Process Management")){
-                    String Url="https://drive.google.com/file/d/1F4kPMksVeEBXvTFWQAu_2gQmK4wpVzXX/view?usp=sharing";
+
+            @Override
+            public void onbutton2click(ArrayList<String> arrayList, int position) {
+                if(arrayList.get(position).equals("Unit 1 - Operating System Concepts")){
+//                        String Url="https://drive.google.com/file/d/1UqS_TyWV-dJsVOMya4V0sfejV7vwIWtO/export?format=pdf";
+                    String Url="https://www.youtube.com";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-           else if(arrayList.get(position).equals("Unit 3 - Memory Management")){
-            String Url="https://drive.google.com/file/d/1sDYMg410yWAcWQsqjM5oYs1ZQo6ynT6K/view?usp=sharing";
-            Intent intent=new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(Url));
-            startActivity(intent);
-                }
-                   else if(arrayList.get(position).equals("Unit 4 - File and Disk Management")){
-            String Url="https://drive.google.com/file/d/1Vxgu3tUqOMf7CDqV8XleCJYXIF1OEvJY/view?usp=sharing";
-            Intent intent=new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse(Url));
-            startActivity(intent);
-                }
-                   else if(arrayList.get(position).equals("Unit 5 - Linux and Shell Programming")){
-                    String Url="https://drive.google.com/file/d/1VeUAotEcIErf5jTM8oXr3t-9C1Ad_DCF/view?usp=sharing";
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(Url));
+            }
+
+            @Override
+            public void onbutton3click(ArrayList<String> arrayList, int position) {
+                    if(arrayList.get(position).equals("Unit 1 - Operating System Concepts")){
+//                        String Url="https://drive.google.com/file/d/1UqS_TyWV-dJsVOMya4V0sfejV7vwIWtO/export?format=pdf";
+                        String Url="https://www.google.com";
+                         Intent intent=new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(Url));
                     startActivity(intent);
-                }
-       });
+                    }
+            }
+        });
+//        Custom_Adapter2 cd2 = new Custom_Adapter2(Unit, (arrayList, position) -> {
+//           if(arrayList.get(position).equals("Unit 1 - Operating System Concepts")){
+//                   String Url = "https://drive.google.com/file/d/1UqS_TyWV-dJsVOMya4V0sfejV7vwIWtO/export?format=pdf";
+//                   Intent intent = new Intent(Intent.ACTION_VIEW);
+//                   intent.setData(Uri.parse(Url));
+//                   startActivity(intent);
+//            }
+//           else if(arrayList.get(position).equals("Unit 2 - Processor and Process Management")){
+//                    String Url="https://drive.google.com/file/d/1F4kPMksVeEBXvTFWQAu_2gQmK4wpVzXX/view?usp=sharing";
+//                    Intent intent=new Intent(Intent.ACTION_VIEW);
+//                    intent.setData(Uri.parse(Url));
+//                    startActivity(intent);
+//                }
+//           else if(arrayList.get(position).equals("Unit 3 - Memory Management")){
+//            String Url="https://drive.google.com/file/d/1sDYMg410yWAcWQsqjM5oYs1ZQo6ynT6K/view?usp=sharing";
+//            Intent intent=new Intent(Intent.ACTION_VIEW);
+//            intent.setData(Uri.parse(Url));
+//            startActivity(intent);
+//                }
+//                   else if(arrayList.get(position).equals("Unit 4 - File and Disk Management")){
+//            String Url="https://drive.google.com/file/d/1Vxgu3tUqOMf7CDqV8XleCJYXIF1OEvJY/view?usp=sharing";
+//            Intent intent=new Intent(Intent.ACTION_VIEW);
+//            intent.setData(Uri.parse(Url));
+//            startActivity(intent);
+//                }
+//                   else if(arrayList.get(position).equals("Unit 5 - Linux and Shell Programming")){
+//                    String Url="https://drive.google.com/file/d/1VeUAotEcIErf5jTM8oXr3t-9C1Ad_DCF/view?usp=sharing";
+//                    Intent intent=new Intent(Intent.ACTION_VIEW);
+//                    intent.setData(Uri.parse(Url));
+//                    startActivity(intent);
+//                }
+//       });
+
         recyclerView.setAdapter(cd2);
     }
 }

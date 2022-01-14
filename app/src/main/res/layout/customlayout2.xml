@@ -43,6 +43,14 @@
             android:background="#F5F5F5"
             app:srcCompat="@drawable/download_symbol2" />
 
+        <ImageButton
+            android:id="@+id/imagebutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/eye_symbol" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

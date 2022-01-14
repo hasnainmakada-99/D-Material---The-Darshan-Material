@@ -71,38 +71,38 @@ RecyclerView recyclerView;
             }
         }
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        Custom_Adapter2 cd2=new Custom_Adapter2(Unit, (arrayList, position) -> {
-            if(arrayList.get(position).equals("Unit 1 - Operating System Concepts")){
-                String Url="https://drive.google.com/file/d/1MePKX1y-i-3psbeVU9DI3lnkAwu6Ofv_/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-            else if(arrayList.get(position).equals("Unit 2 - Processor and Process Management")){
-                String Url="https://drive.google.com/file/d/187h95ox2U5rnDbbtpia2ma3wK7sL7IyY/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-            else if(arrayList.get(position).equals("Unit 3 - Memory Management")){
-                String Url="https://drive.google.com/file/d/1ut4N629HYsUIPy8sWa-GgVbY9Iypp1w5/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-            else if(arrayList.get(position).equals("Unit 4 - File & Disk Management")){
-                String Url="https://drive.google.com/file/d/1k5Oa_TPwZiAmbtjU68a9EAWLVXKTutOP/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-            else if(arrayList.get(position).equals("Unit 5 - Linux and Shell Programmin")){
-                String Url="https://drive.google.com/file/d/1VeUAotEcIErf5jTM8oXr3t-9C1Ad_DCF/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-        });
-        recyclerView.setAdapter(cd2);
+//        Custom_Adapter2 cd2=new Custom_Adapter2(Unit, (arrayList, position) -> {
+//            if(arrayList.get(position).equals("Unit 1 - Operating System Concepts")){
+//                String Url="https://drive.google.com/file/d/1MePKX1y-i-3psbeVU9DI3lnkAwu6Ofv_/view?usp=sharing";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url));
+//                startActivity(intent);
+//            }
+//            else if(arrayList.get(position).equals("Unit 2 - Processor and Process Management")){
+//                String Url="https://drive.google.com/file/d/187h95ox2U5rnDbbtpia2ma3wK7sL7IyY/view?usp=sharing";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url));
+//                startActivity(intent);
+//            }
+//            else if(arrayList.get(position).equals("Unit 3 - Memory Management")){
+//                String Url="https://drive.google.com/file/d/1ut4N629HYsUIPy8sWa-GgVbY9Iypp1w5/view?usp=sharing";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url));
+//                startActivity(intent);
+//            }
+//            else if(arrayList.get(position).equals("Unit 4 - File & Disk Management")){
+//                String Url="https://drive.google.com/file/d/1k5Oa_TPwZiAmbtjU68a9EAWLVXKTutOP/view?usp=sharing";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url));
+//                startActivity(intent);
+//            }
+//            else if(arrayList.get(position).equals("Unit 5 - Linux and Shell Programmin")){
+//                String Url="https://drive.google.com/file/d/1VeUAotEcIErf5jTM8oXr3t-9C1Ad_DCF/view?usp=sharing";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url));
+//                startActivity(intent);
+//            }
+//        });
+//        recyclerView.setAdapter(cd2);
     }
 }

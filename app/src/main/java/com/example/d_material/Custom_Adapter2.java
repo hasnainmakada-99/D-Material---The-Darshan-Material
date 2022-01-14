@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,7 +21,7 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
     private TextView textView;
     public Context context;
     public Button button2;
-    public ImageButton button3;
+    public ImageButton button3, imageButton2;
     private onclickitem onclickitem;
     ImageView imageView;
 
@@ -28,11 +29,13 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
         private final TextView textView;
 //        private final Button button2;
         private final ImageButton button3;
+        private final ImageButton imageButton2;
         public ViewHolder(View view) {
             super(view);
             textView = (TextView) view.findViewById(R.id.textView);
 //            button2=view.findViewById(R.id.button2);
             button3=view.findViewById(R.id.button3);
+            imageButton2=view.findViewById(R.id.imagebutton2);
         }
 
         public TextView getTextView() {
@@ -45,6 +48,9 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
             return button3;
         }
 
+        public ImageButton getImageButton2() {
+            return imageButton2;
+        }
     }
 
     public Custom_Adapter2(ArrayList<String> dataSet, onclickitem onclickitem) {
@@ -59,6 +65,7 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
         textView = view.findViewById(R.id.textView);
 //        button2=view.findViewById(R.id.button2);
         button3=view.findViewById(R.id.button3);
+        imageButton2=view.findViewById(R.id.imagebutton2);
         return new ViewHolder(view);
     }
 
@@ -71,13 +78,29 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull List<Object> payloads) {
         holder.getTextView().setText(arrayList.get(position));
-        holder.getButton3().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onclickitem.onitemclick(arrayList, holder.getAdapterPosition());
-            }
-        });
-    }
+//        if(holder.getButton3().isClickable()) {
+         holder.getButton3().setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+//                 onclickitem.onitemclick(arrayList, holder.getAdapterPosition());
+                 onclickitem.onbutton3click(arrayList, holder.getAdapterPosition());
+             }
+         });
+         holder.getImageButton2().setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 onclickitem.onbutton2click(arrayList, holder.getAdapterPosition());
+             }
+         });
+//        else if(holder.getImageButton2().isClickable()){
+//            holder.imageButton2.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    onclickitem.onitemclick(arrayList, holder.getAdapterPosition());
+//                }
+//            });
+
+        }
 
     @Override
     public int getItemCount() {
@@ -86,6 +109,8 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
 
     public interface onclickitem {
         void onitemclick(ArrayList<String> arrayList, int position);
+        void onbutton2click(ArrayList<String> arrayList, int position);
+        void onbutton3click(ArrayList<String> arrayList, int position);
     }
 
 }

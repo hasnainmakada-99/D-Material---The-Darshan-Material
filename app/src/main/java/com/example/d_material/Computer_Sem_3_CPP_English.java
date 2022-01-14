@@ -69,44 +69,45 @@ public class Computer_Sem_3_CPP_English extends AppCompatActivity {
             }
         }
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-        Custom_Adapter2 cd2=new Custom_Adapter2(Unit, (arrayList, position) -> {
-            if(arrayList.get(position).equals("Unit 1 - Principles of Object Oriented Programming")){
-                String Url="https://drive.google.com/file/d/1NMYKp659lmk12w5XBW9aF-1fPYiPXpGV/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-            else if(arrayList.get(position).equals("Unit 2 - Functions in C++ and Working with objects")){
-                String Url="https://drive.google.com/file/d/1K4nbqn69PIK6deLq0FFaumPWQp3vnG3Q/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-            else if(arrayList.get(position).equals("Unit 3 - Constructor and Destructor")){
-                String Url="https://drive.google.com/file/d/19DPJ-dzDFD17edLX7Xr2hJPe38YqfFSt/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-            else if(arrayList.get(position).equals("Unit 4 - Inheritance")){
-                String Url="https://drive.google.com/file/d/1rNK_NNrcdI2jUCOkyQPrOyj1MMCZZuxX/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-            else if(arrayList.get(position).equals("Unit 5 - Pointers, Virtual functions and Polymorphism")){
-                String Url="https://drive.google.com/file/d/1wdY5bhc7t2s7YbW7ltZ-Bebb7WqNrMWL/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-            else if(arrayList.get(position).equals("Unit 6 - Managing Console I/O Operations")){
-                String Url="https://drive.google.com/file/d/1b_4ADUaN972dk6voe2FAxpUtqKr5ucOI/view?usp=sharing";
-                Intent intent=new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(Url));
-                startActivity(intent);
-            }
-        });
-        recyclerView.setAdapter(cd2);
+//        Custom_Adapter2 cd2=new Custom_Adapter2(Unit, (arrayList, position) -> {
+//            if(arrayList.get(position).equals("Unit 1 - Principles of Object Oriented Programming")){
+////                String Url="https://drive.google.com/file/d/1NMYKp659lmk12w5XBW9aF-1fPYiPXpGV/view?usp=sharing";
+//                String Url2="https://drive.google.com/uc?export=download&id=1NMYKp659lmk12w5XBW9aF-1fPYiPXpGV";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url2));
+//                startActivity(intent);
+//            }
+//            else if(arrayList.get(position).equals("Unit 2 - Functions in C++ and Working with objects")){
+//                String Url="https://drive.google.com/file/d/1K4nbqn69PIK6deLq0FFaumPWQp3vnG3Q/view?usp=sharing";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url));
+//                startActivity(intent);
+//            }
+//            else if(arrayList.get(position).equals("Unit 3 - Constructor and Destructor")){
+//                String Url="https://drive.google.com/file/d/19DPJ-dzDFD17edLX7Xr2hJPe38YqfFSt/view?usp=sharing";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url));
+//                startActivity(intent);
+//            }
+//            else if(arrayList.get(position).equals("Unit 4 - Inheritance")){
+//                String Url="https://drive.google.com/file/d/1rNK_NNrcdI2jUCOkyQPrOyj1MMCZZuxX/view?usp=sharing";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url));
+//                startActivity(intent);
+//            }
+//            else if(arrayList.get(position).equals("Unit 5 - Pointers, Virtual functions and Polymorphism")){
+//                String Url="https://drive.google.com/file/d/1wdY5bhc7t2s7YbW7ltZ-Bebb7WqNrMWL/view?usp=sharing";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url));
+//                startActivity(intent);
+//            }
+//            else if(arrayList.get(position).equals("Unit 6 - Managing Console I/O Operations")){
+//                String Url="https://drive.google.com/file/d/1b_4ADUaN972dk6voe2FAxpUtqKr5ucOI/view?usp=sharing";
+//                Intent intent=new Intent(Intent.ACTION_VIEW);
+//                intent.setData(Uri.parse(Url));
+//                startActivity(intent);
+//            }
+//        });
+//        recyclerView.setAdapter(cd2);
     }
 }
