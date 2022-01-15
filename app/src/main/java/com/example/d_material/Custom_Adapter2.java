@@ -78,11 +78,9 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull List<Object> payloads) {
         holder.getTextView().setText(arrayList.get(position));
-//        if(holder.getButton3().isClickable()) {
          holder.getButton3().setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
-//                 onclickitem.onitemclick(arrayList, holder.getAdapterPosition());
                  onclickitem.onbutton3click(arrayList, holder.getAdapterPosition());
              }
          });
@@ -92,15 +90,7 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
                  onclickitem.onbutton2click(arrayList, holder.getAdapterPosition());
              }
          });
-//        else if(holder.getImageButton2().isClickable()){
-//            holder.imageButton2.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    onclickitem.onitemclick(arrayList, holder.getAdapterPosition());
-//                }
-//            });
-
-        }
+     }
 
     @Override
     public int getItemCount() {

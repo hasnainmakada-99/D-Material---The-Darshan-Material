@@ -71,6 +71,88 @@ RecyclerView recyclerView;
             }
         }
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        Custom_Adapter2 cd2=new Custom_Adapter2(Unit, new Custom_Adapter2.onclickitem() {
+            @Override
+            public void onitemclick(ArrayList<String> arrayList, int position) {
+
+            }
+
+            @Override
+            public void onbutton2click(ArrayList<String> arrayList, int position) {
+                if(arrayList.get(position).equals("Unit 1 - Operating System Concepts")){
+                    String Url="https://drive.google.com/file/d/1MePKX1y-i-3psbeVU9DI3lnkAwu6Ofv_/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+
+                else if(arrayList.get(position).equals("Unit 2 - Processor and Process Management")) {
+                    String Url = "https://drive.google.com/file/d/187h95ox2U5rnDbbtpia2ma3wK7sL7IyY/view?usp=sharing";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).equals("Unit 3 - Memory Management")){
+                    String Url="https://drive.google.com/file/d/1ut4N629HYsUIPy8sWa-GgVbY9Iypp1w5/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).equals("Unit 4 - File & Disk Management")){
+                    String Url="https://drive.google.com/file/d/1k5Oa_TPwZiAmbtjU68a9EAWLVXKTutOP/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+
+                else if(arrayList.get(position).equals("Unit 5 - Linux and Shell Programming")){
+                    String Url="https://drive.google.com/file/d/1VeUAotEcIErf5jTM8oXr3t-9C1Ad_DCF/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+
+            }
+
+            @Override
+            public void onbutton3click(ArrayList<String> arrayList, int position) {
+                if(arrayList.get(position).equals("Unit 1 - Operating System Concepts")){
+                    String Url="https://drive.google.com/uc?export=download&id=1MePKX1y-i-3psbeVU9DI3lnkAwu6Ofv_";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+
+                else if(arrayList.get(position).equals("Unit 2 - Processor and Process Management")) {
+                    String Url = "https://drive.google.com/uc?export=download&id=187h95ox2U5rnDbbtpia2ma3wK7sL7IyY";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).equals("Unit 3 - Memory Management")){
+                    String Url="https://drive.google.com/uc?export=download&id=1ut4N629HYsUIPy8sWa-GgVbY9Iypp1w5";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).equals("Unit 4 - File & Disk Management")){
+                    String Url="https://drive.google.com/uc?export=download&id=1k5Oa_TPwZiAmbtjU68a9EAWLVXKTutOP";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+
+                else if(arrayList.get(position).equals("Unit 5 - Linux and Shell Programming")){
+                    String Url="https://drive.google.com/uc?export=download&id=1VeUAotEcIErf5jTM8oXr3t-9C1Ad_DCF";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+
+
+            }
+        });
 //        Custom_Adapter2 cd2=new Custom_Adapter2(Unit, (arrayList, position) -> {
 //            if(arrayList.get(position).equals("Unit 1 - Operating System Concepts")){
 //                String Url="https://drive.google.com/file/d/1MePKX1y-i-3psbeVU9DI3lnkAwu6Ofv_/view?usp=sharing";
@@ -103,6 +185,6 @@ RecyclerView recyclerView;
 //                startActivity(intent);
 //            }
 //        });
-//        recyclerView.setAdapter(cd2);
+        recyclerView.setAdapter(cd2);
     }
 }

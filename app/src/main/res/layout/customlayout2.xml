@@ -22,11 +22,10 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="271dp"
-            android:layout_height="66dp"
+            android:layout_width="268dp"
+            android:layout_height="68dp"
             android:layout_gravity="center_vertical"
             android:fontFamily="@font/lato_itallic"
-            android:gravity="center_horizontal"
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
             android:text="TextView"
@@ -35,21 +34,24 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/imagebutton2"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
             android:layout_marginTop="35dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="#F5F5F5"
-            app:srcCompat="@drawable/download_symbol2" />
+            android:background="#84c325"
+            app:srcCompat="@drawable/eye_symbol" />
 
         <ImageButton
-            android:id="@+id/imagebutton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="33dp"
+            android:id="@+id/button3"
+            android:layout_width="67dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="2dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/eye_symbol" />
+            android:background="#84c325"
+            app:srcCompat="@drawable/download_symbol2" />
 
     </LinearLayout>
 
