@@ -5,12 +5,16 @@
       <map>
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.10364583333333334" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/border_layout.xml" value="0.21822916666666667" />
+        <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/download_symbol.xml" value="0.11319444444444444" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/dropdown_arrow_background.xml" value="0.1" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/eye_symbol.xml" value="0.12777777777777777" />
+        <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.11319444444444444" />
+        <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.11319444444444444" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/ic_launcher_background.xml" value="0.10364583333333334" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/shape.xml" value="0.1984375" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/spinner_back.xml" value="0.1" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/spinner_background.xml" value="0.14155405405405405" />
+        <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/spinner_border.xml" value="0.11319444444444444" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_civil_engineering.xml" value="0.1765625" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_engineering.xml" value="0.1" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem1.xml" value="0.152" />
