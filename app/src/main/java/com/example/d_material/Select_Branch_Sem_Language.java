@@ -174,15 +174,6 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
         String language= spinner3.getSelectedItem().toString();
 
         if(Branch_Name.equals("Computer Engineering")) {
-            if (Semester_Name.equals("Semester 1")) {
-                if (language.equals("English")) {
-//                    Intent intent = new Intent(getApplicationContext(), computer_sem_1_english.class);
-//                    startActivity(intent);
-                } else if (language.equals("Gujarati")) {
-//                    Intent intent = new Intent(getApplicationContext(), computer_sem_1_Gujarati.class);
-//                    startActivity(intent);
-                }
-            }
             if (Semester_Name.equals("Semester 3")) {
                 if (language.equals("English")) {
                     Intent intent = new Intent(getApplicationContext(), Computer_Sem_3_English.class);
@@ -193,12 +184,14 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
                 }
             }
         }
-            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester")){
+            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester"))
+            {
                 Toast.makeText(getApplicationContext(), "Please Select Branch & Semester", Toast.LENGTH_SHORT).show();
             }
 
-            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester")){
+            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester"))
+            {
             Toast.makeText(getApplicationContext(), "Please Select Branch & Semester", Toast.LENGTH_SHORT).show();
-        }
+            }
     }
 }
