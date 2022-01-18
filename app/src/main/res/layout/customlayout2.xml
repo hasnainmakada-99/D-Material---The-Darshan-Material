@@ -48,7 +48,7 @@
             android:layout_width="67dp"
             android:layout_height="34dp"
             android:layout_marginTop="35dp"
-            android:layout_marginRight="2dp"
+            android:layout_marginRight="4dp"
             android:layout_weight="1"
             android:background="#84c325"
             app:srcCompat="@drawable/download_symbol2" />

@@ -27,13 +27,11 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView textView;
-//        private final Button button2;
         private final ImageButton button3;
         private final ImageButton imageButton2;
         public ViewHolder(View view) {
             super(view);
             textView = (TextView) view.findViewById(R.id.textView);
-//            button2=view.findViewById(R.id.button2);
             button3=view.findViewById(R.id.button3);
             imageButton2=view.findViewById(R.id.imagebutton2);
         }
@@ -41,9 +39,7 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
         public TextView getTextView() {
             return textView;
         }
-//        public Button getButton2(){
-//            return  button2;
-//        }
+
         public ImageButton getButton3(){
             return button3;
         }
@@ -63,7 +59,6 @@ public class Custom_Adapter2 extends RecyclerView.Adapter<Custom_Adapter2.ViewHo
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.customlayout2, viewGroup, false);
         textView = view.findViewById(R.id.textView);
-//        button2=view.findViewById(R.id.button2);
         button3=view.findViewById(R.id.button3);
         imageButton2=view.findViewById(R.id.imagebutton2);
         return new ViewHolder(view);

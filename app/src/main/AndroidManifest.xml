@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DMaterial">
         <activity
+            android:name=".Computer_Sem3_malp_English"
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem_3_English"/>
+        <activity
+            android:name=".Computer_Sem3_Ds_English"
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem_3_English" />
+        <activity
+            android:name=".Computer_Sem3_dbms_English"
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem_3_English" />
+        <activity
             android:name=".Computer_Sem_3_CPP_English"
             android:exported="false"
             android:parentActivityName=".Computer_Sem_3_English" />

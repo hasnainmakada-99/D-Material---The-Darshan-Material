@@ -1,20 +1,13 @@
 package com.example.d_material;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DividerItemDecoration;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -79,13 +72,25 @@ ArrayList<String> Subject_Name;
         Custom_Adapter ad=new Custom_Adapter(Subject_Name, new Custom_Adapter.onclickitem() {
             @Override
             public void onitemclick(ArrayList<String> arrayList, int position, ImageView imageView) {
-                if(arrayList.get(position).toString().equals("3330701 - OPERATING SYSTEM")){
-                        Intent intent=new Intent(getApplicationContext(), Computer_Sem_3_OS_English.class);
-                        startActivity(intent);
+                if(arrayList.get(position).equals("3330701 - OPERATING SYSTEM")){
+                        Intent intent1=new Intent(getApplicationContext(), Computer_Sem_3_OS_English.class);
+                        startActivity(intent1);
                 }
-                else if(arrayList.get(position).toString().equals("3330702 - PROGRAMMING IN C++")){
-                    Intent intent=new Intent(getApplicationContext(), Computer_Sem_3_CPP_English.class);
-                    startActivity(intent);
+                else if(arrayList.get(position).equals("3330702 - PROGRAMMING IN C++")){
+                    Intent intent2=new Intent(getApplicationContext(), Computer_Sem_3_CPP_English.class);
+                    startActivity(intent2);
+                }
+                else if(arrayList.get(position).contains("3330703 - DATABASE MANAGEMENT SYSTEM")){
+                    Intent intent3=new Intent(getApplicationContext(), Computer_Sem3_dbms_English.class);
+                    startActivity(intent3);
+                }
+                else if(arrayList.get(position).contains("3330704 - DATA STRUCTURE")){
+                    Intent intent3=new Intent(getApplicationContext(), Computer_Sem3_Ds_English.class);
+                    startActivity(intent3);
+                }
+                else if(arrayList.get(position).contains("3330705 - MICROPROCESSOR & ASSEMBLY LANGUAGE PROGRAMMING")){
+                    Intent intent3=new Intent(getApplicationContext(), Computer_Sem3_malp_English.class);
+                    startActivity(intent3);
                 }
             }
         });
