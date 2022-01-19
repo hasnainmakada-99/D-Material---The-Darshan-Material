@@ -3,28 +3,32 @@ package com.example.d_material;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
+
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Computer_Sem3_malp_English extends AppCompatActivity {
+public class Computer_Sem3_malp_guj extends AppCompatActivity {
     RecyclerView recyclerView;
     JSONArray result;
     ArrayList<String> Unit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_computer_sem3_malp_english);
+        setContentView(R.layout.activity_computer_sem3_malp_guj);
         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Microprocessor & Assembly Language Programming"+"</font>"));
         recyclerView=findViewById(R.id.recycle_view);
         Unit=new ArrayList<String>();
@@ -32,12 +36,12 @@ public class Computer_Sem3_malp_English extends AppCompatActivity {
     }
 
     public void Get_Unit_Name(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH13, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH17, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY13);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY17);
                     Fetch_Unit_Name(result);
                 }
                 catch (Exception e){
@@ -59,7 +63,7 @@ public class Computer_Sem3_malp_English extends AppCompatActivity {
         for (int i = 0; i < jo.length(); i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
-                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME13));
+                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME17));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -74,28 +78,28 @@ public class Computer_Sem3_malp_English extends AppCompatActivity {
             @Override
             public void onbutton2click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).equals("Unit 1 – Introduction of Microprocessor")){
-                    String Url="https://drive.google.com/file/d/1PeMqHDBXQRFa0l8j9yM6XUNmKBGEbQiP/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1urv5vOc7LVpZTdMl085oT7N9BOwxpHiK/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).equals("Unit 3 – 8085 Instruction set")){
-                    String Url="https://drive.google.com/file/d/1P88NvD8a19W8m8LRkvJXBiMgS8vf5BZg/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/157cAlGFzjkZI9skWz0_B4IFNc_RdnO1-/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 5 – 8085 Interrupts")){
-                    String Url="https://drive.google.com/file/d/1oQBBStdYPibSjw-DQyuVz2dgFCF3I5_9/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1iz-aYQEZowpkr0srsLvzB-54mjZPz3F7/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 6 – Introduction to Advanced Microprocessor")){
-                    String Url="https://drive.google.com/file/d/1BJqTIesMqJQ-zvmRz9IRuKS3QsMnhQvE/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1y-7XdUrC4EfcZ85o114D2AwpJ2_PSa8Z/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -106,26 +110,26 @@ public class Computer_Sem3_malp_English extends AppCompatActivity {
             @Override
             public void onbutton3click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).equals("Unit 1 – Introduction of Microprocessor")){
-                    String Url="https://drive.google.com/uc?export=download&id=1PeMqHDBXQRFa0l8j9yM6XUNmKBGEbQiP";
+                    String Url="https://drive.google.com/uc?export=download&id=1urv5vOc7LVpZTdMl085oT7N9BOwxpHiK";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).equals("Unit 3 – 8085 Instruction set")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=1P88NvD8a19W8m8LRkvJXBiMgS8vf5BZg";
+                    String Url = "https://drive.google.com/uc?export=download&id=157cAlGFzjkZI9skWz0_B4IFNc_RdnO1-";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 5 – 8085 Interrupts")){
-                    String Url="https://drive.google.com/uc?export=download&id=1oQBBStdYPibSjw-DQyuVz2dgFCF3I5_9";
+                    String Url="https://drive.google.com/uc?export=download&id=1iz-aYQEZowpkr0srsLvzB-54mjZPz3F7";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("Unit 6 – Introduction to Advanced Microprocesso")){
-                    String Url="https://drive.google.com/uc?export=download&id=1BJqTIesMqJQ-zvmRz9IRuKS3QsMnhQvE";
+                    String Url="https://drive.google.com/uc?export=download&id=1y-7XdUrC4EfcZ85o114D2AwpJ2_PSa8Z";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);

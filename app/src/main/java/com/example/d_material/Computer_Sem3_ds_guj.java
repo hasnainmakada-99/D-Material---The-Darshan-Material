@@ -21,14 +21,14 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Computer_Sem3_Ds_English extends AppCompatActivity {
+public class Computer_Sem3_ds_guj extends AppCompatActivity {
     RecyclerView recyclerView;
     JSONArray result;
     ArrayList<String> Unit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_computer_sem3_ds_english);
+        setContentView(R.layout.activity_computer_sem3_ds_guj);
         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Data Structures"+"</font>"));
         recyclerView=findViewById(R.id.recycle_view);
         Unit=new ArrayList<String>();
@@ -36,12 +36,12 @@ public class Computer_Sem3_Ds_English extends AppCompatActivity {
     }
 
     public void Get_Unit_Name(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH12, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH16, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY12);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY16);
                     Fetch_Unit_Name(result);
                 }
                 catch (Exception e){
@@ -63,7 +63,7 @@ public class Computer_Sem3_Ds_English extends AppCompatActivity {
         for (int i = 0; i < jo.length(); i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
-                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME12));
+                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME16));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -78,32 +78,32 @@ public class Computer_Sem3_Ds_English extends AppCompatActivity {
             @Override
             public void onbutton2click(ArrayList<String> arrayList, int position) {
                 if (arrayList.get(position).equals("Unit 1 – Basic Concept of Data Structures")) {
-                    String Url = "https://drive.google.com/file/d/1Oe9GgstIBZe9S9UkCF5BMavMxtbERDq6/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1FakM0r5s9dmIVpAg1M2nJwALcLzOE4AW/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 } else if (arrayList.get(position).equals("Unit 2 – Strings")) {
-                    String Url = "https://drive.google.com/file/d/1bjC56c4vq4UHQoIwMxWhY00rgOk5tq7L/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1kozZgZItb0sCra0v7k3OALpiD6IQu6yh/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 } else if (arrayList.get(position).equals("Unit 3 – Stack and Queues")) {
-                    String Url = "https://drive.google.com/file/d/1CLY3HUKRcwJX8judToIiOfQxaBtuqOGp/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/10k219Zgsw5-mSgs_4sJ2eKU0Bb9xUcut/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 } else if (arrayList.get(position).equals("Unit 4 – Linked List")) {
-                    String Url = "https://drive.google.com/file/d/1kbTH6XX4DppJUbNIXasdkEY730I8Wzan/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1OyuHRyynY26llQyvk_tPNDrYGNwC50he/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 } else if (arrayList.get(position).contains("Unit 5 – Sorting and Hashing")) {
-                    String Url = "https://drive.google.com/file/d/1TTLAt7ZaEBL4630BkuBjGEyzmWEQRoCq/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1_Hn53f-fkW6PU35ytLZKjqY91eAx8wOj/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 } else if (arrayList.get(position).contains("Unit 6 – Trees")) {
-                    String Url = "https://drive.google.com/file/d/1druKOpoGh9twNsju0tGSiARxSlilzoOd/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1SLQYwF4yBaJVr8Fdd7dOPZKtD61lSZCp/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -113,32 +113,32 @@ public class Computer_Sem3_Ds_English extends AppCompatActivity {
             @Override
             public void onbutton3click(ArrayList<String> arrayList, int position) {
                 if (arrayList.get(position).equals("Unit 1 – Basic Concept of Data Structures")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=1Oe9GgstIBZe9S9UkCF5BMavMxtbERDq6";
+                    String Url = "https://drive.google.com/uc?export=download&id=1FakM0r5s9dmIVpAg1M2nJwALcLzOE4AW";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 } else if (arrayList.get(position).equals("Unit 2 – Strings")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=1bjC56c4vq4UHQoIwMxWhY00rgOk5tq7L";
+                    String Url = "https://drive.google.com/uc?export=download&id=1kozZgZItb0sCra0v7k3OALpiD6IQu6yh";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 } else if (arrayList.get(position).equals("Unit 3 – Stack and Queues")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=1CLY3HUKRcwJX8judToIiOfQxaBtuqOGp";
+                    String Url = "https://drive.google.com/uc?export=download&id=10k219Zgsw5-mSgs_4sJ2eKU0Bb9xUcut";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 } else if (arrayList.get(position).equals("Unit 4 – Linked List")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=1kbTH6XX4DppJUbNIXasdkEY730I8Wzan";
+                    String Url = "https://drive.google.com/uc?export=download&id=1OyuHRyynY26llQyvk_tPNDrYGNwC50he";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 } else if (arrayList.get(position).contains("Unit 5 – Sorting and Hashing")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=1TTLAt7ZaEBL4630BkuBjGEyzmWEQRoCq";
+                    String Url = "https://drive.google.com/uc?export=download&id=1_Hn53f-fkW6PU35ytLZKjqY91eAx8wOj";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 } else if (arrayList.get(position).contains("Unit 6 – Trees")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=1druKOpoGh9twNsju0tGSiARxSlilzoOd";
+                    String Url = "https://drive.google.com/uc?export=download&id=1SLQYwF4yBaJVr8Fdd7dOPZKtD61lSZCp";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);

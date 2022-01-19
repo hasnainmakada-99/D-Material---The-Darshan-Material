@@ -84,6 +84,22 @@ public class Computer_Sem_3_Gujarati extends AppCompatActivity {
                     Intent intent=new Intent(getApplicationContext(), Computer_Sem_3_OS_Gujarati.class);
                     startActivity(intent);
                 }
+                else if(arrayList.get(position).equals("3330702 - PROGRAMMING IN C++")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem_3_Cpp_Gujarati.class);
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).equals("3330703 - DATABASE MANAGEMENT SYSTEM")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem3_dbms_guj.class);
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).equals("3330704 - DATA STRUCTURE")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem3_ds_guj.class);
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330705 - MICROPROCESSOR & ASSEMBLY LANGUAGE PROGRAMMING")){
+                    Intent intent3=new Intent(getApplicationContext(), Computer_Sem3_malp_guj.class);
+                    startActivity(intent3);
+                }
             }
         });
         recyclerView.setAdapter(ad);

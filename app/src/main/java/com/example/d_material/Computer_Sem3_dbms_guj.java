@@ -21,14 +21,14 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Computer_Sem3_dbms_English extends AppCompatActivity {
+public class Computer_Sem3_dbms_guj extends AppCompatActivity {
     RecyclerView recyclerView;
     JSONArray result;
     ArrayList<String> Unit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_computer_sem3_dbms_english);
+        setContentView(R.layout.activity_computer_sem3_dbms_guj);
         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Database Management System"+"</font>"));
         recyclerView=findViewById(R.id.recycle_view);
         Unit=new ArrayList<String>();
@@ -36,12 +36,12 @@ public class Computer_Sem3_dbms_English extends AppCompatActivity {
     }
 
     public void Get_Unit_Name(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH11, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH15, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY11);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY15);
                     Fetch_Unit_Name(result);
                 }
                 catch (Exception e){
@@ -63,7 +63,7 @@ public class Computer_Sem3_dbms_English extends AppCompatActivity {
         for (int i = 0; i < jo.length(); i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
-                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME11));
+                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME15));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -78,40 +78,40 @@ public class Computer_Sem3_dbms_English extends AppCompatActivity {
             @Override
             public void onbutton2click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).equals("Unit 1 – Introduction to Database System")){
-                    String Url="https://drive.google.com/file/d/1XEzSn1n6buxkDjNa6jSFbzw1NzvjHUf2/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1NMyD6IOk66GP5R_uBIS7UTiSKBBJtsdr/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).equals("Unit 2 – Database System Architecture")) {
-                    String Url = "https://drive.google.com/file/d/1LID8Wg2cMjx9lxZdRUdHhOP11T0bIuSt/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1uaIrY5xtphQFjC6csdHoTCvPUzNeufth/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 3 – Introduction to Structured Query Language (SQL)")){
-                    String Url="https://drive.google.com/file/d/1Dss_Z7GqhcfqqigsnqkI2NONyGN85Mvz/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1aIikSz3QU72fZ7OCwjXeRnNEYzdwwIOC/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 4 – Relational Algebra and implementation using SQL")){
-                    String Url="https://drive.google.com/file/d/1g6TAVX0j1jI5K224sbJGUvV58Kfk5dFZ/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1VUvmQ_-xN-2cqGZj973S24GdBEdF47UE/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 5 – Database Integrity Constraints")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1d2nOFeFolctU_875RQ62avShDnXzC8xr/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).equals("Unit 6 – Entity Relational Model")){
-                    String Url="https://drive.google.com/file/d/1qmwRX5v0C-yxoKv0ewarcbXWUaqA9_aM/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1bNHvHxTfMIxQND9liS5LoETT7t7rVi1m/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -122,40 +122,40 @@ public class Computer_Sem3_dbms_English extends AppCompatActivity {
             @Override
             public void onbutton3click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).equals("Unit 1 – Introduction to Database System")){
-                    String Url="https://drive.google.com/uc?export=download&id=1XEzSn1n6buxkDjNa6jSFbzw1NzvjHUf2";
+                    String Url="https://drive.google.com/uc?export=download&id=1NMyD6IOk66GP5R_uBIS7UTiSKBBJtsdr";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).equals("Unit 2 – Database System Architecture")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=1LID8Wg2cMjx9lxZdRUdHhOP11T0bIuSt";
+                    String Url = "https://drive.google.com/uc?export=download&id=1uaIrY5xtphQFjC6csdHoTCvPUzNeufth";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 3 – Introduction to Structured Query Language (SQL)")){
-                    String Url="https://drive.google.com/uc?export=download&id=1Dss_Z7GqhcfqqigsnqkI2NONyGN85Mvz";
+                    String Url="https://drive.google.com/uc?export=download&id=1aIikSz3QU72fZ7OCwjXeRnNEYzdwwIOC";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 4 – Relational Algebra and implementation using SQL")){
-                    String Url="https://drive.google.com/uc?export=download&id=1g6TAVX0j1jI5K224sbJGUvV58Kfk5dFZ";
+                    String Url="https://drive.google.com/uc?export=download&id=1VUvmQ_-xN-2cqGZj973S24GdBEdF47UE";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 5 – Database Integrity Constraints")){
-                    String Url="https://drive.google.com/uc?export=download&id=1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi";
+                    String Url="https://drive.google.com/uc?export=download&id=1d2nOFeFolctU_875RQ62avShDnXzC8xr";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).equals("Unit 6 – Entity Relational Model")){
-                    String Url="https://drive.google.com/uc?export=download&id=1qmwRX5v0C-yxoKv0ewarcbXWUaqA9_aM";
+                    String Url="https://drive.google.com/uc?export=download&id=1bNHvHxTfMIxQND9liS5LoETT7t7rVi1m";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
