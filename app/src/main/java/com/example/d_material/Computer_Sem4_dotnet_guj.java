@@ -78,33 +78,33 @@ public class Computer_Sem4_dotnet_guj extends AppCompatActivity {
             @Override
             public void onbutton2click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("Unit 1 - Introduction to Microsoft .NET framework")){
-                    String Url="https://drive.google.com/file/d/1LGJaS8QbqD0tm1OZN8cQ_ldqC5vUk3QB/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/12Z4RVntRswlRCGMOC0eeFLRytKbLwMqE/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).equals("Unit 2 - Introduction to Windows Common Controls")) {
-                    String Url = "https://drive.google.com/file/d/18z6wesIyi4kfQNpeA2nOvVm642JbuDuV/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1F_xml_RFzljf6nstwkoZ-5sI9ndu09xs/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 3 - Additional controls and Menus Of Windows")){
-                    String Url="https://drive.google.com/file/d/1YoQPh-qc_F-KoQKRzFPJ7L6lcC9fcuHs/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1kiLnLRg5kzXBJ1t0gKTnne1KVMMhxJ0w/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 4 - Advanced Features of VB.Net")){
-                    String Url="https://drive.google.com/file/d/1bHBdrAuYN7HGO5ypRU36zmCTb4zKEC51/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1_ePyepGvU_nB_0OVS9_4v0kzbfVGZjzn/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 5 - Inbuilt Functions and Database access using ADO.NET")){
-                    String Url="https://drive.google.com/file/d/1rEsvtMt52NQneNvgkdRZt-kLAMkEX2D9/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1LW_bfvtVHrIHIlQwk2u0ttb1_m60EJ2p/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -114,33 +114,33 @@ public class Computer_Sem4_dotnet_guj extends AppCompatActivity {
             @Override
             public void onbutton3click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("Unit 1 - Introduction to Microsoft .NET framework")){
-                    String Url="https://drive.google.com/uc?export=download&id=1LGJaS8QbqD0tm1OZN8cQ_ldqC5vUk3QB";
+                    String Url="https://drive.google.com/uc?export=download&id=12Z4RVntRswlRCGMOC0eeFLRytKbLwMqE";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).equals("Unit 2 - Introduction to Windows Common Controls")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=18z6wesIyi4kfQNpeA2nOvVm642JbuDuV";
+                    String Url = "https://drive.google.com/uc?export=download&id=1F_xml_RFzljf6nstwkoZ-5sI9ndu09xs";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 3 - Additional controls and Menus Of Windows")){
-                    String Url="https://drive.google.com/uc?export=download&id=1YoQPh-qc_F-KoQKRzFPJ7L6lcC9fcuHs";
+                    String Url="https://drive.google.com/uc?export=download&id=1kiLnLRg5kzXBJ1t0gKTnne1KVMMhxJ0w";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 4 - Advanced Features of VB.Net")){
-                    String Url="https://drive.google.com/uc?export=download&id=1bHBdrAuYN7HGO5ypRU36zmCTb4zKEC51";
+                    String Url="https://drive.google.com/uc?export=download&id=1_ePyepGvU_nB_0OVS9_4v0kzbfVGZjzn";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 5 - Inbuilt Functions and Database access using ADO.NET")){
-                    String Url="https://drive.google.com/uc?export=download&id=1rEsvtMt52NQneNvgkdRZt-kLAMkEX2D9";
+                    String Url="https://drive.google.com/uc?export=download&id=1LW_bfvtVHrIHIlQwk2u0ttb1_m60EJ2p";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);

@@ -78,33 +78,33 @@ public class Computer_Sem4_cn_guj extends AppCompatActivity {
             @Override
             public void onbutton2click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).equals("Unit 1 - Basics Of Computer Network")){
-                    String Url="https://drive.google.com/file/d/1bKYgGH04-sAduEV_7pZocjDiNM7dhX-s/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1J9dxJr_KLk2GW0toSr-9C5PXkWaq_1JL/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 2 - The Reference Model for Network Communication")) {
-                    String Url = "https://drive.google.com/file/d/1jJgaDfKqZqQFFGNlstscsV1S4GM5dpKR/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1nfCfU8nZbvm-USpY4ye4dEX3H2yMlj3x/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 3 - Transmission Media")){
-                    String Url="https://drive.google.com/file/d/1A2B9dvmzvciyY6bjtc7crGrMI0Ansh-E/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1sFc2ZFnDY9ynLqUMxD8GIbcG4i17blkp/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 4 - Network Devices")){
-                    String Url="https://drive.google.com/file/d/1FHiyDJbAfaO4higupqdJnSQF3OS6XDRb/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/17o9uUphdUiPbcRREJKfGJUxzm6QHsqpz/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 5 - IP Protocol and Network Applications")){
-                    String Url="https://drive.google.com/file/d/18xVmQqS4Y0nwfKAD8ohQfZwPIM6e-3lO/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1ECbyudvrQ77tNxKCEmf5TbeCMYFSWlcW/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -115,33 +115,33 @@ public class Computer_Sem4_cn_guj extends AppCompatActivity {
             @Override
             public void onbutton3click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).equals("Unit 1 - Basics Of Computer Network")){
-                    String Url="https://drive.google.com/uc?export=download&id=1bKYgGH04-sAduEV_7pZocjDiNM7dhX-s";
+                    String Url="https://drive.google.com/uc?export=download&id=1J9dxJr_KLk2GW0toSr-9C5PXkWaq_1JL";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 2 - The Reference Model for Network Communication")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=1jJgaDfKqZqQFFGNlstscsV1S4GM5dpKR";
+                    String Url = "https://drive.google.com/uc?export=download&id=1nfCfU8nZbvm-USpY4ye4dEX3H2yMlj3x";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 3 - Transmission Media")){
-                    String Url="https://drive.google.com/uc?export=download&id=1A2B9dvmzvciyY6bjtc7crGrMI0Ansh-E";
+                    String Url="https://drive.google.com/uc?export=download&id=1sFc2ZFnDY9ynLqUMxD8GIbcG4i17blkp";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 4 - Network Devices")){
-                    String Url="https://drive.google.com/uc?export=download&id=1FHiyDJbAfaO4higupqdJnSQF3OS6XDRb";
+                    String Url="https://drive.google.com/uc?export=download&id=17o9uUphdUiPbcRREJKfGJUxzm6QHsqpz";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 5 - IP Protocol and Network Applications")){
-                    String Url="https://drive.google.com/uc?export=download&id=18xVmQqS4Y0nwfKAD8ohQfZwPIM6e-3lO";
+                    String Url="https://drive.google.com/uc?export=download&id=1ECbyudvrQ77tNxKCEmf5TbeCMYFSWlcW";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);

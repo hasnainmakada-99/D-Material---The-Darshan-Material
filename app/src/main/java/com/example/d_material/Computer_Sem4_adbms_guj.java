@@ -78,33 +78,33 @@ public class Computer_Sem4_adbms_guj extends AppCompatActivity {
             @Override
             public void onbutton2click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).equals("Unit 1 - Advanced SQL")){
-                    String Url="https://drive.google.com/file/d/1zSQTLgNvqe_RiciQs20ymYE0DKS70rK9/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1jndmUiwpOG33Bn1Fl7RzUmxTCEn0sWYh/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).equals("Unit 2 - PL/SQL and Triggers")) {
-                    String Url = "https://drive.google.com/file/d/1L-Jv8cMD930U9VPNEe6uIESsGuojz5SN/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/15XmwPlG93yLWOB0EoYz_eDHQtcdGfNCJ/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 3 - Functional Dependency and Decomposition")){
-                    String Url="https://drive.google.com/file/d/1lq95WBVtbVABoeprEdl6QZ7tCx3c4waq/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1AKvEzA6hgmWldXa4JArYKLXs0X1JXNVA/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 4 - Normalization")){
-                    String Url="https://drive.google.com/file/d/1S88B758n8zIS681w5RuGhgB11ZVAxBuH/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1AlD5ZHfc1OKal1joplWZlM8Tr1keGjrP/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 5 - Transaction Processing")){
-                    String Url="https://drive.google.com/file/d/1130NodC0p-H1dKfyFJnbkOq0y08y5tTb/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1nvDQoyYxhaRJjUAojsFCnpR7lCt_pVLP/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -115,33 +115,33 @@ public class Computer_Sem4_adbms_guj extends AppCompatActivity {
             @Override
             public void onbutton3click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).equals("Unit 1 - Advanced SQL")){
-                    String Url="https://drive.google.com/uc?export=download&id=1zSQTLgNvqe_RiciQs20ymYE0DKS70rK9";
+                    String Url="https://drive.google.com/uc?export=download&id=1jndmUiwpOG33Bn1Fl7RzUmxTCEn0sWYh";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).equals("Unit 2 - PL/SQL and Triggers")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=1L-Jv8cMD930U9VPNEe6uIESsGuojz5SN";
+                    String Url = "https://drive.google.com/uc?export=download&id=15XmwPlG93yLWOB0EoYz_eDHQtcdGfNCJ";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 3 - Functional Dependency and Decomposition")){
-                    String Url="https://drive.google.com/uc?export=download&id=1lq95WBVtbVABoeprEdl6QZ7tCx3c4waq";
+                    String Url="https://drive.google.com/uc?export=download&id=1AKvEzA6hgmWldXa4JArYKLXs0X1JXNVA";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 4 - Normalization")){
-                    String Url="https://drive.google.com/uc?export=download&id=1S88B758n8zIS681w5RuGhgB11ZVAxBuH";
+                    String Url="https://drive.google.com/uc?export=download&id=1AlD5ZHfc1OKal1joplWZlM8Tr1keGjrP";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 5 - Transaction Processing")){
-                    String Url="https://drive.google.com/uc?export=download&id=1130NodC0p-H1dKfyFJnbkOq0y08y5tTb";
+                    String Url="https://drive.google.com/uc?export=download&id=1nvDQoyYxhaRJjUAojsFCnpR7lCt_pVLP";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
