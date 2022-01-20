@@ -12,21 +12,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DMaterial">
         <activity
+            android:name=".Computer_Sem4_coa_eng"
+            android:exported="false" />
+        <activity
+            android:name=".Computer_Sem4_dotnet_eng"
+            android:exported="false" />
+        <activity
+            android:name=".Computer_Sem4_fsd_eng"
+            android:exported="false" />
+        <activity
+            android:name=".Computer_Sem4_cn_eng"
+            android:exported="false" />
+        <activity
+            android:name=".Computer_Sem4_adbms_eng"
+            android:exported="false" />
+        <activity
+            android:name=".Computer_Sem4_guj"
+            android:exported="false" />
+        <activity
+            android:name=".Computer_Sem4_eng"
+            android:exported="false" />
+        <activity
             android:name=".Computer_Sem3_malp_guj"
             android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_Gujarati"/>
+            android:parentActivityName=".Computer_Sem_3_Gujarati" />
         <activity
             android:name=".Computer_Sem3_ds_guj"
             android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_Gujarati"/>
+            android:parentActivityName=".Computer_Sem_3_Gujarati" />
         <activity
             android:name=".Computer_Sem3_dbms_guj"
             android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_Gujarati"/>
+            android:parentActivityName=".Computer_Sem_3_Gujarati" />
         <activity
             android:name=".Computer_Sem_3_Cpp_Gujarati"
             android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_Gujarati"/>
+            android:parentActivityName=".Computer_Sem_3_Gujarati" />
         <activity
             android:name=".Computer_Sem3_malp_English"
             android:exported="false"

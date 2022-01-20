@@ -87,4 +87,34 @@ public class Fetch_Database_D_Material {
     public static final String URL_TAG_NAME17="Gujarati";
     public static final String JSON_ARRAY17="result";
 
+    // For fetching semester 4 computer
+    public static final String URL_PATH18="http://dmaterial.titanslab.in/Computer_Sem4.php";
+    public static final String URL_TAG_NAME18="Subject_Name";
+    public static final String JSON_ARRAY18="result";
+
+    // for fetching semester 4 computer adbms eng
+    public static final String URL_PATH19="http://dmaterial.titanslab.in/Computer_Sem4_adbms_eng.php";
+    public static final String URL_TAG_NAME19="Unit";
+    public static final String JSON_ARRAY19="result";
+
+    // for fetching sem 4 computer cn eng
+    public static final String URL_PATH20="http://dmaterial.titanslab.in/Computer_Sem4_cn_eng.php";
+    public static final String URL_TAG_NAME20="Unit";
+    public static final String JSON_ARRAY20="result";
+
+    // for fetching sem 4 fsd eng
+    public static final String URL_PATH21="http://dmaterial.titanslab.in/Computer_Sem4_fsd_eng.php";
+    public static final String URL_TAG_NAME21="Unit";
+    public static final String JSON_ARRAY21="result";
+
+    // for fetching sem4 dotnet eng
+    public static final String URL_PATH22="http://dmaterial.titanslab.in/Computer_Sem4_dotnet_eng.php";
+    public static final String URL_TAG_NAME22="Unit";
+    public static final String JSON_ARRAY22="result";
+
+    // for fetching sem 4 coa eng
+    public static final String URL_PATH23="http://dmaterial.titanslab.in/Computer_Sem4_coa_eng.php";
+    public static final String URL_TAG_NAME23="Unit";
+    public static final String JSON_ARRAY23="result";
+
 }
