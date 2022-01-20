@@ -21,27 +21,27 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Computer_Sem4_dotnet_eng extends AppCompatActivity {
+public class Compute_Sem4_fsd_guj extends AppCompatActivity {
     RecyclerView recyclerView;
     JSONArray result;
     ArrayList<String> Unit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_computer_sem4_dotnet_eng);
-        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +".Net Programming"+"</font>"));
+        setContentView(R.layout.activity_compute_sem4_fsd_guj);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Fundamentals of Software Development"+"</font>"));
         recyclerView=findViewById(R.id.recycle_view);
         Unit=new ArrayList<String>();
         Get_Unit_Name();
     }
 
     public void Get_Unit_Name(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH27, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH26, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY27);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY26);
                     Fetch_Unit_Name(result);
                 }
                 catch (Exception e){
@@ -63,7 +63,7 @@ public class Computer_Sem4_dotnet_eng extends AppCompatActivity {
         for (int i = 0; i < jo.length(); i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
-                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME27));
+                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME26));
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -77,70 +77,57 @@ public class Computer_Sem4_dotnet_eng extends AppCompatActivity {
 
             @Override
             public void onbutton2click(ArrayList<String> arrayList, int position) {
-                if(arrayList.get(position).contains("Unit 1 - Introduction to Microsoft .NET framework")){
-                    String Url="https://drive.google.com/file/d/1LGJaS8QbqD0tm1OZN8cQ_ldqC5vUk3QB/view?usp=sharing";
+                if(arrayList.get(position).equals("Unit 1 - Software Development Process")){
+                    String Url="https://drive.google.com/file/d/1tjhqEr9YPvQSNapeELTWagZHH6BXVgaR/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
-                else if(arrayList.get(position).equals("Unit 2 - Introduction to Windows Common Controls")) {
-                    String Url = "https://drive.google.com/file/d/18z6wesIyi4kfQNpeA2nOvVm642JbuDuV/view?usp=sharing";
+                else if(arrayList.get(position).equals("Unit 2 - Software Analysis and Design")) {
+                    String Url = "https://drive.google.com/file/d/1xuDGxLpsbY2En_zGpjOjZ8NSeeZA3LWM/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).equals("Unit 3 - Additional controls and Menus Of Windows")){
-                    String Url="https://drive.google.com/file/d/1YoQPh-qc_F-KoQKRzFPJ7L6lcC9fcuHs/view?usp=sharing";
+                else if(arrayList.get(position).equals("Unit 3 - Software Project Management")){
+                    String Url="https://drive.google.com/file/d/1iBYgZVwrAR_Um__BdzHtwsh3jlPk_IZE/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).equals("Unit 4 - Advanced Features of VB.Net")){
-                    String Url="https://drive.google.com/file/d/1bHBdrAuYN7HGO5ypRU36zmCTb4zKEC51/view?usp=sharing";
+                else if(arrayList.get(position).equals("Unit 4 - Software Coding and Testing")){
+                    String Url="https://drive.google.com/file/d/155VQoOFoDsV1wgcnosmLJfhPDD2pTgk6/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
-                else if(arrayList.get(position).contains("Unit 5 - Inbuilt Functions and Database access using ADO.NET")){
-                    String Url="https://drive.google.com/file/d/1rEsvtMt52NQneNvgkdRZt-kLAMkEX2D9/view?usp=sharing";
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(Url));
-                    startActivity(intent);
-                }
             }
 
             @Override
             public void onbutton3click(ArrayList<String> arrayList, int position) {
-                if(arrayList.get(position).contains("Unit 1 - Introduction to Microsoft .NET framework")){
-                    String Url="https://drive.google.com/uc?export=download&id=1LGJaS8QbqD0tm1OZN8cQ_ldqC5vUk3QB";
+                if(arrayList.get(position).equals("Unit 1 - Software Development Process")){
+                    String Url="https://drive.google.com/uc?export=download&id=1tjhqEr9YPvQSNapeELTWagZHH6BXVgaR";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
-                else if(arrayList.get(position).equals("Unit 2 - Introduction to Windows Common Controls")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=18z6wesIyi4kfQNpeA2nOvVm642JbuDuV";
+                else if(arrayList.get(position).equals("Unit 2 - Software Analysis and Design")) {
+                    String Url = "https://drive.google.com/uc?export=download&id=1xuDGxLpsbY2En_zGpjOjZ8NSeeZA3LWM";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).equals("Unit 3 - Additional controls and Menus Of Windows")){
-                    String Url="https://drive.google.com/uc?export=download&id=1YoQPh-qc_F-KoQKRzFPJ7L6lcC9fcuHs";
+                else if(arrayList.get(position).equals("Unit 3 - Software Project Management")){
+                    String Url="https://drive.google.com/uc?export=download&id=1iBYgZVwrAR_Um__BdzHtwsh3jlPk_IZE";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).equals("Unit 4 - Advanced Features of VB.Net")){
-                    String Url="https://drive.google.com/uc?export=download&id=1bHBdrAuYN7HGO5ypRU36zmCTb4zKEC51";
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(Url));
-                    startActivity(intent);
-                }
-
-                else if(arrayList.get(position).contains("Unit 5 - Inbuilt Functions and Database access using ADO.NET")){
-                    String Url="https://drive.google.com/uc?export=download&id=1rEsvtMt52NQneNvgkdRZt-kLAMkEX2D9";
+                else if(arrayList.get(position).equals("Unit 4 - Software Coding and Testing")){
+                    String Url="https://drive.google.com/uc?export=download&id=155VQoOFoDsV1wgcnosmLJfhPDD2pTgk6";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);

@@ -21,14 +21,14 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Computer_Sem4_dotnet_eng extends AppCompatActivity {
+public class Computer_Sem4_dotnet_guj extends AppCompatActivity {
     RecyclerView recyclerView;
     JSONArray result;
     ArrayList<String> Unit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_computer_sem4_dotnet_eng);
+        setContentView(R.layout.activity_computer_sem4_dotnet_guj);
         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +".Net Programming"+"</font>"));
         recyclerView=findViewById(R.id.recycle_view);
         Unit=new ArrayList<String>();
@@ -36,12 +36,12 @@ public class Computer_Sem4_dotnet_eng extends AppCompatActivity {
     }
 
     public void Get_Unit_Name(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH27, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH22, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY27);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY22);
                     Fetch_Unit_Name(result);
                 }
                 catch (Exception e){
@@ -63,7 +63,7 @@ public class Computer_Sem4_dotnet_eng extends AppCompatActivity {
         for (int i = 0; i < jo.length(); i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
-                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME27));
+                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME22));
             } catch (Exception e) {
                 e.printStackTrace();
             }

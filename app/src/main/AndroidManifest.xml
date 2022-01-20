@@ -12,26 +12,53 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DMaterial">
         <activity
+            android:name=".Computer_Sem4_coa_guj"
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem4_guj"/>
+        <activity
+            android:name=".Computer_Sem4_dotnet_guj"
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem4_guj"/>
+        <activity
+            android:name=".Compute_Sem4_fsd_guj"
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem4_guj"/>
+        <activity
+            android:name=".Computer_Sem4_cn_guj"
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem4_guj"/>
+        <activity
+            android:name=".Computer_Sem4_adbms_guj"
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem4_guj"/>
+        <activity
             android:name=".Computer_Sem4_coa_eng"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem4_eng"/>
         <activity
             android:name=".Computer_Sem4_dotnet_eng"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem4_eng"/>
         <activity
             android:name=".Computer_Sem4_fsd_eng"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem4_eng"/>
         <activity
             android:name=".Computer_Sem4_cn_eng"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem4_eng"/>
         <activity
             android:name=".Computer_Sem4_adbms_eng"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Computer_Sem4_eng"/>
         <activity
             android:name=".Computer_Sem4_guj"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language"/>
         <activity
             android:name=".Computer_Sem4_eng"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language"/>
         <activity
             android:name=".Computer_Sem3_malp_guj"
             android:exported="false"

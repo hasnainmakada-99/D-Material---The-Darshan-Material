@@ -73,25 +73,25 @@ public class Computer_Sem4_guj extends AppCompatActivity {
         Custom_Adapter ad=new Custom_Adapter(Subject_Name, new Custom_Adapter.onclickitem() {
             @Override
             public void onitemclick(ArrayList<String> arrayList, int position, ImageView imageView) {
-                if(arrayList.get(position).equals("3330701 - OPERATING SYSTEM")){
-                    Intent intent1=new Intent(getApplicationContext(), Computer_Sem_3_OS_English.class);
+                if(arrayList.get(position).equals("3340701 - ADVANCE DATABASE MANAGEMENT SYSTEM")){
+                    Intent intent1=new Intent(getApplicationContext(), Computer_Sem4_adbms_guj.class);
                     startActivity(intent1);
                 }
-                else if(arrayList.get(position).equals("3330702 - PROGRAMMING IN C++")){
-                    Intent intent2=new Intent(getApplicationContext(), Computer_Sem_3_CPP_English.class);
-                    startActivity(intent2);
+                else if(arrayList.get(position).equals("3340702 - COMPUTER NETWORKS")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem4_cn_guj.class);
+                    startActivity(intent);
                 }
-                else if(arrayList.get(position).contains("3330703 - DATABASE MANAGEMENT SYSTEM")){
-                    Intent intent3=new Intent(getApplicationContext(), Computer_Sem3_dbms_English.class);
-                    startActivity(intent3);
+                else if(arrayList.get(position).equals("3341603 - FUNDAMENTALS OF SOFTWARE DEVELOPMENT")){
+                    Intent intent=new Intent(getApplicationContext(), Compute_Sem4_fsd_guj.class);
+                    startActivity(intent);
                 }
-                else if(arrayList.get(position).contains("3330704 - DATA STRUCTURE")){
-                    Intent intent3=new Intent(getApplicationContext(), Computer_Sem3_Ds_English.class);
-                    startActivity(intent3);
+                else if(arrayList.get(position).equals("3340704 - .NET PROGRAMMING")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem4_dotnet_guj.class);
+                    startActivity(intent);
                 }
-                else if(arrayList.get(position).contains("3330705 - MICROPROCESSOR & ASSEMBLY LANGUAGE PROGRAMMING")){
-                    Intent intent3=new Intent(getApplicationContext(), Computer_Sem3_malp_English.class);
-                    startActivity(intent3);
+                else if(arrayList.get(position).equals("3340705 - COMPUTER ORGANIZATION AND ARCHITECTURE")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem4_coa_guj.class);
+                    startActivity(intent);
                 }
             }
         });

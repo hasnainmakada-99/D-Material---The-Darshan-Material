@@ -117,4 +117,29 @@ public class Fetch_Database_D_Material {
     public static final String URL_TAG_NAME23="Unit";
     public static final String JSON_ARRAY23="result";
 
+    // for fetching semester 4 computer adbms guj
+    public static final String URL_PATH24="http://dmaterial.titanslab.in/Computer_Sem4_adbms_guj.php";
+    public static final String URL_TAG_NAME24="Gujarati";
+    public static final String JSON_ARRAY24="result";
+
+    // for fetching semester 4 computer cn guj
+    public static final String URL_PATH25="http://dmaterial.titanslab.in/Computer_Sem4_cn_guj.php";
+    public static final String URL_TAG_NAME25="Gujarati";
+    public static final String JSON_ARRAY25="result";
+
+    // for fetching semester 4 computer fsd guj
+    public static final String URL_PATH26="http://dmaterial.titanslab.in/Computer_Sem4_fsd_guj.php";
+    public static final String URL_TAG_NAME26="Gujarati";
+    public static final String JSON_ARRAY26="result";
+
+    // for fetching semester 4 computer .net guj
+    public static final String URL_PATH27="http://dmaterial.titanslab.in/Computer_Sem4_dotnet_guj.php";
+    public static final String URL_TAG_NAME27="Gujarati";
+    public static final String JSON_ARRAY27="result";
+
+    // for fetching sem 4 computer coa guj
+    public static final String URL_PATH28="http://dmaterial.titanslab.in/Computer_Sem4_coa_guj.php";
+    public static final String URL_TAG_NAME28="Gujarati";
+    public static final String JSON_ARRAY28="result";
+
 }

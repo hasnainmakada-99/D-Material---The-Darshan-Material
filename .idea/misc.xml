@@ -16,6 +16,7 @@
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/spinner_background.xml" value="0.14155405405405405" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/drawable/spinner_border.xml" value="0.11319444444444444" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_civil_engineering.xml" value="0.1765625" />
+        <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_compute_sem4_fsd_guj.xml" value="0.12702702702702703" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_engineering.xml" value="0.1" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem1.xml" value="0.152" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem1_english.xml" value="0.15989583333333332" />
@@ -38,8 +39,12 @@
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem3_os_english.xml" value="0.152" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem3_os_gujarati.xml" value="0.11486486486486487" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem4_adbms_eng.xml" value="0.12702702702702703" />
+        <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem4_adbms_guj.xml" value="0.12702702702702703" />
+        <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem4_cn_guj.xml" value="0.12702702702702703" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem4_coa_eng.xml" value="0.12702702702702703" />
+        <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem4_coa_guj.xml" value="0.12702702702702703" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem4_dotnet_eng.xml" value="0.12702702702702703" />
+        <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem4_dotnet_guj.xml" value="0.12702702702702703" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem4_eng.xml" value="0.12702702702702703" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem4_fsd_eng.xml" value="0.12702702702702703" />
         <entry key="..\:/Android Projects/DMaterial/app/src/main/res/layout/activity_computer_sem4_guj.xml" value="0.12702702702702703" />
