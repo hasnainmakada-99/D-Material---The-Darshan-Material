@@ -142,4 +142,48 @@ public class Fetch_Database_D_Material {
     public static final String URL_TAG_NAME28="Gujarati";
     public static final String JSON_ARRAY28="result";
 
+    // for fetching subject of sem 5 computer
+    public static final String URL_PATH29="http://dmaterial.titanslab.in/Computer_Sem5.php";
+    public static final String URL_TAG_NAME29="Subject_Name";
+    public static final String JSON_ARRAY29="result";
+
+    // for fetching units of cmt sem 5 eng
+    public static final String URL_PATH30="http://dmaterial.titanslab.in/Computer_Sem5_cmt_eng.php";
+    public static final String URL_TAG_NAME30="English";
+    public static final String JSON_ARRAY30="result";
+
+    // for fetching units of cmt sem 5 guj
+    public static final String URL_PATH31="http://dmaterial.titanslab.in/Computer_Sem5_cmt_guj.php";
+    public static final String URL_TAG_NAME31="Gujarati";
+    public static final String JSON_ARRAY31="result";
+
+    // for fetching units of dwpd sem 5 eng
+    public static final String URL_PATH32="http://dmaterial.titanslab.in/Computer_Sem5_dwpd_eng.php";
+    public static final String URL_TAG_NAME32="English";
+    public static final String JSON_ARRAY32="result";
+
+    // for fetching units of dwpd sem 5 guj
+    public static final String URL_PATH33="http://dmaterial.titanslab.in/Computer_Sem5_dwpd_guj.php";
+    public static final String URL_TAG_NAME33="Gujarati";
+    public static final String JSON_ARRAY33="result";
+
+    // for fetching units of java sem 5 eng
+    public static final String URL_PATH34="http://dmaterial.titanslab.in/Computer_Sem5_java_eng.php";
+    public static final String URL_TAG_NAME34="English";
+    public static final String JSON_ARRAY34="result";
+
+    // for fetching units of java sem 5 guj
+    public static final String URL_PATH35="http://dmaterial.titanslab.in/Computer_Sem5_java_guj.php";
+    public static final String URL_TAG_NAME35="Gujarati";
+    public static final String JSON_ARRAY35="result";
+
+    // for fetching units of mat sem 5 eng
+    public static final String URL_PATH36="http://dmaterial.titanslab.in/Computer_Sem5_mat_eng.php";
+    public static final String URL_TAG_NAME36="English";
+    public static final String JSON_ARRAY36="result";
+
+    // for fetching units of mat sem 5 guj
+    public static final String URL_PATH37="http://dmaterial.titanslab.in/Computer_Sem5_mat_guj.php";
+    public static final String URL_TAG_NAME37="Gujarati";
+    public static final String JSON_ARRAY37="result";
 }
