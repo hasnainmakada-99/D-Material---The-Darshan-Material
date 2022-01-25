@@ -73,24 +73,20 @@ public class Computer_Sem5_guj extends AppCompatActivity {
         Custom_Adapter ad=new Custom_Adapter(Subject_Name, new Custom_Adapter.onclickitem() {
             @Override
             public void onitemclick(ArrayList<String> arrayList, int position, ImageView imageView) {
-                if(arrayList.get(position).equals("3340701 - ADVANCE DATABASE MANAGEMENT SYSTEM")){
-                    Intent intent1=new Intent(getApplicationContext(), Computer_Sem4_adbms_eng.class);
+                if(arrayList.get(position).equals("3350701 - COMPUTER MAINTENANCE AND TROUBLE SHOOTING")){
+                    Intent intent1=new Intent(getApplicationContext(), Computer_Sem5_cmt_guj.class);
                     startActivity(intent1);
                 }
-                else if(arrayList.get(position).equals("3340702 - COMPUTER NETWORKS")){
-                    Intent intent=new Intent(getApplicationContext(), Computer_Sem4_cn_eng.class);
+                else if(arrayList.get(position).equals("3350702 - DYNAMIC WEB PAGE DEVELOPMENT")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem5_dwpd_guj.class);
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).equals("3341603 - FUNDAMENTALS OF SOFTWARE DEVELOPMENT")){
-                    Intent intent=new Intent(getApplicationContext(), Computer_Sem4_fsd_eng.class);
+                else if(arrayList.get(position).equals("3350703 - JAVA PROGRAMMING")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem5_java_guj.class);
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).equals("3340704 - .NET PROGRAMMING")){
-                    Intent intent=new Intent(getApplicationContext(), Computer_Sem4_dotnet_eng.class);
-                    startActivity(intent);
-                }
-                else if(arrayList.get(position).equals("3340705 - COMPUTER ORGANIZATION AND ARCHITECTURE")){
-                    Intent intent=new Intent(getApplicationContext(), Computer_Sem4_coa_eng.class);
+                else if(arrayList.get(position).equals("3350705 - MULTIMEDIA AND ANIMATION TECHNIQUES")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem5_mat_guj.class);
                     startActivity(intent);
                 }
             }
