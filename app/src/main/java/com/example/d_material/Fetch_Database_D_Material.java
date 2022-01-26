@@ -17,14 +17,14 @@ public class Fetch_Database_D_Material {
     public static final String JSON_ARRAY7="result";
 
     // For Fetching Semester_1_Computer_Engineering_English
-//    public static final String URL_PATH3="http://192.168.0.108/D-Material-The-Darshan-Material-App/Fetch_Computer_Sem_1_English.php";
-//    public static final String URL_TAG_NAME3="Subject_Name";
-//    public static final String JSON_ARRAY3="result";
+    //    public static final String URL_PATH3="http://192.168.0.108/D-Material-The-Darshan-Material-App/Fetch_Computer_Sem_1_English.php";
+    //    public static final String URL_TAG_NAME3="Subject_Name";
+    //    public static final String JSON_ARRAY3="result";
 
     // For Fetching Semester_1_Computer_Engineering_Gujarati
-//    public static final String URL_PATH4="http://192.168.0.108/D-Material-The-Darshan-Material-App/Fetch_Computer_Sem_1_Gujarati.php";
-//    public static final String URL_TAG_NAME4="Subject_Name";
-//    public static final String JSON_ARRAY4="result";
+    //    public static final String URL_PATH4="http://192.168.0.108/D-Material-The-Darshan-Material-App/Fetch_Computer_Sem_1_Gujarati.php";
+    //    public static final String URL_TAG_NAME4="Subject_Name";
+    //    public static final String JSON_ARRAY4="result";
 
     // For Fetching Semester_3_Computer_Engineering_English
     public static final String URL_PATH5="http://dmaterial.titanslab.in/Fetch_Computer_Sem_3_English.php";
@@ -186,4 +186,39 @@ public class Fetch_Database_D_Material {
     public static final String URL_PATH37="http://dmaterial.titanslab.in/Computer_Sem5_mat_guj.php";
     public static final String URL_TAG_NAME37="Gujarati";
     public static final String JSON_ARRAY37="result";
+
+    // for fetching subject name of semester 6
+    public static final String URL_PATH38="http://dmaterial.titanslab.in/Computer_Sem6.php";
+    public static final String URL_TAG_NAME38="Subject_Name";
+    public static final String JSON_ARRAY38="result";
+
+    // for fetching units of ajp english sem 6
+    public static final String URL_PATH39="http://dmaterial.titanslab.in/Computer_Sem6_ajp_eng.php";
+    public static final String URL_TAG_NAME39="Unit";
+    public static final String JSON_ARRAY39="result";
+
+    // for fetching units of ajp guj sem 6
+    public static final String URL_PATH40="http://dmaterial.titanslab.in/Computer_Sem6_ajp_guj.php";
+    public static final String URL_TAG_NAME40="Gujarati";
+    public static final String JSON_ARRAY40="result";
+
+    // for fetching sem 6 dwsl eng
+    public static final String URL_PATH41="http://dmaterial.titanslab.in/Computer_Sem6_dwsl_eng.php";
+    public static final String URL_TAG_NAME41="Unit";
+    public static final String JSON_ARRAY41="result";
+
+    // for fetching sem 6 dwsl guj
+    public static final String URL_PATH42="http://dmaterial.titanslab.in/Computer_Sem6_dwsl_guj.php";
+    public static final String URL_TAG_NAME42="Gujarati";
+    public static final String JSON_ARRAY42="result";
+
+    // for fetching sem 6 awt eng
+    public static final String URL_PATH43="http://dmaterial.titanslab.in/Computer_Sem6_awt_eng.php";
+    public static final String URL_TAG_NAME43="Unit";
+    public static final String JSON_ARRAY43="result";
+
+    // for fetching sem 6 awt guj
+    public static final String URL_PATH44="http://dmaterial.titanslab.in/Computer_Sem6_awt_guj.php";
+    public static final String URL_TAG_NAME44="Gujarati";
+    public static final String JSON_ARRAY44="result";
 }

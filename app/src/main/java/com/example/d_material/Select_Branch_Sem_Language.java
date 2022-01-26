@@ -203,8 +203,18 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
                     startActivity(intent);
                 }
             }
+            else if(Semester_Name.equals("Semester 6")){
+                if(language.equals("English")){
+                    Intent intent =new Intent(getApplicationContext(), Computer_Sem6_eng.class);
+                    startActivity(intent);
+                }
+                else if(language.equals("Gujarati")){
+                    Intent intent=new Intent(getApplicationContext(), Computer_Sem6_guj.class);
+                    startActivity(intent);
+                }
+            }
         }
-            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester"))
+            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester") || language.equals("English") || language.equals("Gujarati"))
             {
                 Toast.makeText(getApplicationContext(), "Please Select Branch & Semester", Toast.LENGTH_SHORT).show();
             }
