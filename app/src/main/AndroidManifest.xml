@@ -12,37 +12,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DMaterial">
         <activity
+            android:name=".Civil_Sem1"
+            android:exported="false" />
+        <activity
             android:name=".Computer_Sem6_awt_guj"
             android:exported="false"
-            android:parentActivityName=".Computer_Sem6_guj"/>
+            android:parentActivityName=".Computer_Sem6_guj" />
         <activity
             android:name=".Computer_Sem6_dwsl_guj"
             android:exported="false"
-            android:parentActivityName=".Computer_Sem6_guj"/>
+            android:parentActivityName=".Computer_Sem6_guj" />
         <activity
             android:name=".Computer_Sem6_ajp_guj"
             android:exported="false"
-            android:parentActivityName=".Computer_Sem6_guj"/>
+            android:parentActivityName=".Computer_Sem6_guj" />
         <activity
             android:name=".Computer_Sem6_guj"
             android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language"/>
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Computer_Sem6_awt_eng"
             android:exported="false"
-            android:parentActivityName=".Computer_Sem6_eng"/>
+            android:parentActivityName=".Computer_Sem6_eng" />
         <activity
             android:name=".Computer_Sem6_dwsl_eng"
             android:exported="false"
-            android:parentActivityName=".Computer_Sem6_eng"/>
+            android:parentActivityName=".Computer_Sem6_eng" />
         <activity
             android:name=".Computer_Sem6_ajp_eng"
             android:exported="false"
-            android:parentActivityName=".Computer_Sem6_eng"/>
+            android:parentActivityName=".Computer_Sem6_eng" />
         <activity
             android:name=".Computer_Sem6_eng"
             android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language"/>
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Computer_Sem5_mat_guj"
             android:exported="false"
