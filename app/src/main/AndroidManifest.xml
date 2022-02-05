@@ -12,8 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DMaterial">
         <activity
+            android:name=".Civil_Sem6"
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language"/>
+        <activity
+            android:name=".Civil_Sem5"
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language"/>
+        <activity
+            android:name=".Civil_Sem4"
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language"/>
+        <activity
+            android:name=".Civil_Sem3"
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language"/>
+        <activity
+            android:name=".Civil_Sem2"
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language"/>
+        <activity
             android:name=".Civil_Sem1"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Select_Branch_Sem_Language"/>
         <activity
             android:name=".Computer_Sem6_awt_guj"
             android:exported="false"

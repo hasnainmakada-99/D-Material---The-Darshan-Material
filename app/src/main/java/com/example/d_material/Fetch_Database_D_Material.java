@@ -221,4 +221,34 @@ public class Fetch_Database_D_Material {
     public static final String URL_PATH44="http://dmaterial.titanslab.in/Computer_Sem6_awt_guj.php";
     public static final String URL_TAG_NAME44="Gujarati";
     public static final String JSON_ARRAY44="result";
+
+    // for fetching sem 1 civil
+    public static final String URL_PATH45="http://dmaterial.titanslab.in/Civil_Sem1.php";
+    public static final String URL_TAG_NAME45="Subject_Name";
+    public static final String JSON_ARRAY45="result";
+
+    // for fetching sem 2 civil
+    public static final String URL_PATH46="http://dmaterial.titanslab.in/Civil_Sem2.php";
+    public static final String URL_TAG_NAME46="Subject_Name";
+    public static final String JSON_ARRAY46="result";
+
+    // for fetching sem 3 civil
+    public static final String URL_PATH47="http://dmaterial.titanslab.in/Civil_Sem3.php";
+    public static final String URL_TAG_NAME47="Subject_Name";
+    public static final String JSON_ARRAY47="result";
+
+    // for fetching sem 4 civil
+    public static final String URL_PATH48="http://dmaterial.titanslab.in/Civil_Sem4.php";
+    public static final String URL_TAG_NAME48="Subject_Name";
+    public static final String JSON_ARRAY48="result";
+
+    // for fetching sem 5 civil
+    public static final String URL_PATH49="http://dmaterial.titanslab.in/Civil_Sem5.php";
+    public static final String URL_TAG_NAME49="Subject_Name";
+    public static final String JSON_ARRAY49="result";
+
+    // for fetching sem 6 civil
+    public static final String URL_PATH50="http://dmaterial.titanslab.in/Civil_Sem6.php";
+    public static final String URL_TAG_NAME50="Subject_Name";
+    public static final String JSON_ARRAY50="result";
 }

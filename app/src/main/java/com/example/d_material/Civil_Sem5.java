@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
-import android.widget.ImageView;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -21,15 +19,15 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Civil_Sem1 extends AppCompatActivity {
+public class Civil_Sem5 extends AppCompatActivity {
     JSONArray result;
     RecyclerView recyclerView;
     ArrayList<String> Subject_Name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_civil_sem1);
-        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Civil Engineering Semester 1"+"</font>"));
+        setContentView(R.layout.activity_civil_sem5);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Civil Engineering Semester 5"+"</font>"));
         Subject_Name=new ArrayList<String>();
         recyclerView=findViewById(R.id.recycle_view);
         Get_Subjects_Name();
@@ -37,12 +35,12 @@ public class Civil_Sem1 extends AppCompatActivity {
 
 
     public void Get_Subjects_Name(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH45, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH49, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY45);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY49);
                     Fetch_Subject_Name(result);
                 }
                 catch (Exception e){
@@ -62,7 +60,7 @@ public class Civil_Sem1 extends AppCompatActivity {
         for (int i = 0; i <jo.length() ; i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
-                Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME45));
+                Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME49));
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -81,6 +79,6 @@ public class Civil_Sem1 extends AppCompatActivity {
 
             }
         });
-                recyclerView.setAdapter(cd);
+        recyclerView.setAdapter(cd);
     }
 }
