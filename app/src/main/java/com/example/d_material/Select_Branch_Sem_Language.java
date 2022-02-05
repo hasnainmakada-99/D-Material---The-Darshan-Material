@@ -213,6 +213,10 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
                     startActivity(intent);
                 }
             }
+            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester") || language.equals("English") || language.equals("Gujarati"))
+            {
+                Toast.makeText(getApplicationContext(), "Please Select Branch & Semester", Toast.LENGTH_SHORT).show();
+            }
         }
         else if(Branch_Name.equals("Civil Engineering")){
             if(Semester_Name.equals("Semester 1")){
@@ -237,6 +241,38 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
             }
             else if(Semester_Name.equals("Semester 6")){
                 Intent intent=new Intent(getApplicationContext(), Civil_Sem6.class);
+                startActivity(intent);
+            }
+            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester") || language.equals("English") || language.equals("Gujarati"))
+            {
+                Toast.makeText(getApplicationContext(), "Please Select Branch & Semester", Toast.LENGTH_SHORT).show();
+            }
+        }
+
+        else if(Branch_Name.equals("Mechanical Engineering")){
+            if(Semester_Name.equals("Semester 1")){
+                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem1.class);
+                startActivity(intent);
+            }
+            else if(Semester_Name.equals("Semester 2")){
+                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem2.class);
+                startActivity(intent);
+            }
+
+            else if(Semester_Name.equals("Semester 3")){
+                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem3.class);
+                startActivity(intent);
+            }
+            else if(Semester_Name.equals("Semester 4")){
+                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem4.class);
+                startActivity(intent);
+            }
+            else if(Semester_Name.equals("Semester 5")){
+                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem5.class);
+                startActivity(intent);
+            }
+            else if(Semester_Name.equals("Semester 6")){
+                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem6.class);
                 startActivity(intent);
             }
         }

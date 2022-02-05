@@ -251,4 +251,35 @@ public class Fetch_Database_D_Material {
     public static final String URL_PATH50="http://dmaterial.titanslab.in/Civil_Sem6.php";
     public static final String URL_TAG_NAME50="Subject_Name";
     public static final String JSON_ARRAY50="result";
+
+    // for fetching sem 1 Mech
+    public static final String URL_PATH51="http://dmaterial.titanslab.in/Mechanical_Sem1.php";
+    public static final String URL_TAG_NAME51="Subject_Name";
+    public static final String JSON_ARRAY51="result";
+
+    // for fetching sem 2 Mech
+    public static final String URL_PATH52="http://dmaterial.titanslab.in/Mechanical_Sem2.php";
+    public static final String URL_TAG_NAME52="Subject_Name";
+    public static final String JSON_ARRAY52="result";
+
+    // for fetching sem 3 Mech
+    public static final String URL_PATH53="http://dmaterial.titanslab.in/Mechanical_Sem3.php";
+    public static final String URL_TAG_NAME53="Subject_Name";
+    public static final String JSON_ARRAY53="result";
+
+    // for fetching sem 4 Mech
+    public static final String URL_PATH54="http://dmaterial.titanslab.in/Mechanical_Sem4.php";
+    public static final String URL_TAG_NAME54="Subject_Name";
+    public static final String JSON_ARRAY54="result";
+
+    // for fetching sem 5 Mech
+    public static final String URL_PATH55="http://dmaterial.titanslab.in/Mechanical_Sem5.php";
+    public static final String URL_TAG_NAME55="Subject_Name";
+    public static final String JSON_ARRAY55="result";
+
+    // for fetching sem 6 Mech
+    public static final String URL_PATH56="http://dmaterial.titanslab.in/Mechanical_Sem6.php";
+    public static final String URL_TAG_NAME56="Subject_Name";
+    public static final String JSON_ARRAY56="result";
+
 }
