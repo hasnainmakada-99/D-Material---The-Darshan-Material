@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 
@@ -71,7 +73,42 @@ public class Mechanical_Sem5 extends AppCompatActivity {
         Custom_Adapter3 cd=new Custom_Adapter3(Subject_Name, new Custom_Adapter3.onItemClick() {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3351901 - THERMAL ENGINEERING-II")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3351902 - DESIGN OF MACHINE ELEMENTS")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3351903 - MANUFACTURING ENGINEERING-III")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3351904 - INDUSTRIAL ENGINEERING")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3351905 - ESTIMATING, COSTING AND ENGINEERING CONTRACTING")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3351906 - SELF EMPLOYEMENT AND ENTREPRENEURSHIP DEVELOPMENT")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
 
             @Override

@@ -12,29 +12,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DMaterial">
         <activity
+            android:name=".Electrical_Sem6"
+            android:exported="false" />
+        <activity
+            android:name=".Electrical_Sem5"
+            android:exported="false" />
+        <activity
+            android:name=".Electrical_Sem4"
+            android:exported="false" />
+        <activity
+            android:name=".Electrical_Sem3"
+            android:exported="false" />
+        <activity
+            android:name=".Electrical_Sem2"
+            android:exported="false" />
+        <activity
+            android:name=".Electrical_Sem1"
+            android:exported="false" />
+        <activity
             android:name=".Mechanical_Sem6"
             android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language"/>
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Mechanical_Sem5"
             android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language"/>
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Mechanical_Sem4"
             android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language"/>
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Mechanical_Sem3"
             android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language"/>
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Mechanical_Sem2"
             android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language"/>
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Mechanical_Sem1"
             android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language"/>
+            android:parentActivityName=".Select_Branch_Sem_Language" />
         <activity
             android:name=".Civil_Sem6"
             android:exported="false"

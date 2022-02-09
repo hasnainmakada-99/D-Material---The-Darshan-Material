@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 
@@ -71,7 +73,42 @@ public class Mechanical_Sem4 extends AppCompatActivity {
         Custom_Adapter3 cd=new Custom_Adapter3(Subject_Name, new Custom_Adapter3.onItemClick() {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3341901 - MANUFACTURING ENGINEERING - II")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3341902 - THERMAL ENGINEERING-I")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3341903 - THEORY OF MACHINES")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3341904 - COMPUTER AIDED DESIGN")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3341905 - METROLOGY & INSTRUMENTATION")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3341906 - PLANT MAINTENANCE AND SAFETY")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
 
             @Override

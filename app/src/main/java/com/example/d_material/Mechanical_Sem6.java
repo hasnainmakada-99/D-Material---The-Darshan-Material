@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 
@@ -71,7 +73,36 @@ public class Mechanical_Sem6 extends AppCompatActivity {
         Custom_Adapter3 cd=new Custom_Adapter3(Subject_Name, new Custom_Adapter3.onItemClick() {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3361901 - COMPUTER AIDED MANUFACTURING(CAM)")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3361902 - TOOL ENGINEERING")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3361903 - INDUSTRIAL MANAGEMENT")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3361906 - POWER PLANT ENGINEERING")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3361907 - THERMAL SYSTEMS AND ENERGY EFFICIENCY")) {
+                    String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
 
             @Override

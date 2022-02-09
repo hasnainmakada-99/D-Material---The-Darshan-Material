@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 
@@ -71,7 +73,48 @@ public class Mechanical_Sem3 extends AppCompatActivity {
         Custom_Adapter3 cd=new Custom_Adapter3(Subject_Name, new Custom_Adapter3.onItemClick() {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3331901 - MANUFACTURING ENGINEERING-I")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3331902 - THERMODYNAMICS")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3331903 - FLUID MECHANICS AND HYDRAULIC MACHINES")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3331904 - STRENGTH OF MATERIALS")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3331905 - APPLIED ELECTRICAL AND ELECTRONIC ENGINEERING")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3331906 - COMPUTER AIDED MACHINE DRAWING")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330001 - HUMAN RESOURCE MANAGEMENT")){
+                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
 
             @Override

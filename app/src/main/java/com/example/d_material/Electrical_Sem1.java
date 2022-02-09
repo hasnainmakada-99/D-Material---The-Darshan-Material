@@ -21,15 +21,15 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Civil_Sem4 extends AppCompatActivity {
+public class Electrical_Sem1 extends AppCompatActivity {
     JSONArray result;
     RecyclerView recyclerView;
     ArrayList<String> Subject_Name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_civil_sem4);
-        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Civil Engineering Semester 4"+"</font>"));
+        setContentView(R.layout.activity_electrical_sem1);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Electrical Engineering Semester 1"+"</font>"));
         Subject_Name=new ArrayList<String>();
         recyclerView=findViewById(R.id.recycle_view);
         Get_Subjects_Name();
@@ -37,12 +37,12 @@ public class Civil_Sem4 extends AppCompatActivity {
 
 
     public void Get_Subjects_Name(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH48, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH57, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY48);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY57);
                     Fetch_Subject_Name(result);
                 }
                 catch (Exception e){
@@ -62,7 +62,7 @@ public class Civil_Sem4 extends AppCompatActivity {
         for (int i = 0; i <jo.length() ; i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
-                Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME48));
+                Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME57));
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -73,37 +73,37 @@ public class Civil_Sem4 extends AppCompatActivity {
         Custom_Adapter3 cd=new Custom_Adapter3(Subject_Name, new Custom_Adapter3.onItemClick() {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
-                if(arrayList.get(position).contains("3340601 - STRUCTURAL MECHANICS-II")){
+                if(arrayList.get(position).contains("3300001 - BASIC MATHEMATICS")){
                     String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).contains("3340602 - ADVANCED SURVEYING")){
+                else if(arrayList.get(position).contains("3300002 - ENGLISH")){
                     String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).contains("3340603 - BASIC TRANSPORTATION ENGINEERING")){
+                else if(arrayList.get(position).contains("3300003 - ENVIRONMENT CONSERVATION & HAZARD MANAGEMENT")){
                     String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).contains("3340604 - WATER RESOURCES MANAGEMENT")){
+                else if(arrayList.get(position).contains("3300006 - ENGINEERING CHEMISTRY ( GROUP-2 )")){
                     String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).contains("3340605 - SOIL MECHANICS")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                else if(arrayList.get(position).contains("3300013 - BASIC OF COMPUTER & INFORMATION TECHNOLOGY")) {
+                    String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).contains("3340606 COMPUTER AIDED DRAWING")) {
+                else if(arrayList.get(position).contains("3300015 - FUNDAMENTAL OF MECHANICAL ENGINEERING")) {
                     String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));

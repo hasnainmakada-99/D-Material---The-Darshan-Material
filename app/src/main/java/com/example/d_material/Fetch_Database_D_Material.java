@@ -282,4 +282,34 @@ public class Fetch_Database_D_Material {
     public static final String URL_TAG_NAME56="Subject_Name";
     public static final String JSON_ARRAY56="result";
 
+    // for fetching sem 1 Electrical
+    public static final String URL_PATH57="http://dmaterial.titanslab.in/Electrical_Sem1.php";
+    public static final String URL_TAG_NAME57="Subject_Name";
+    public static final String JSON_ARRAY57="result";
+
+    // for fetching sem 2 Electrical
+    public static final String URL_PATH58="http://dmaterial.titanslab.in/Electrical_Sem2.php";
+    public static final String URL_TAG_NAME58="Subject_Name";
+    public static final String JSON_ARRAY58="result";
+
+    // for fetching sem 3 Electrical
+    public static final String URL_PATH59="http://dmaterial.titanslab.in/Electrical_Sem3.php";
+    public static final String URL_TAG_NAME59="Subject_name";
+    public static final String JSON_ARRAY59="result";
+
+    // for fetching sem 4 Electrical
+    public static final String URL_PATH60="http://dmaterial.titanslab.in/Electrical_Sem4.php";
+    public static final String URL_TAG_NAME60="Subject_name";
+    public static final String JSON_ARRAY60="result";
+
+    // for fetching sem 5 Electrical
+    public static final String URL_PATH61="http://dmaterial.titanslab.in/Electrical_Sem5.php";
+    public static final String URL_TAG_NAME61="Subject_name";
+    public static final String JSON_ARRAY61="result";
+
+    // for fetching sem 6 Electrical
+    public static final String URL_PATH62="http://dmaterial.titanslab.in/Electrical_Sem6.php";
+    public static final String URL_TAG_NAME62="Subject_name";
+    public static final String JSON_ARRAY62="result";
+
 }
