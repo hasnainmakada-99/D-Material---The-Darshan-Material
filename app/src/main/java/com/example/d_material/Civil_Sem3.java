@@ -74,31 +74,31 @@ public class Civil_Sem3 extends AppCompatActivity {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("3330601 - BUILDING MATERIALS")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1An8TraFtNQk-xk7c9afQuRvpKsY8I0LK/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3330602 - CONSTRUCTION TECHNOLOGY")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1z-mJlR63TuoCu57a_HlvdXkgjVkc1MXr/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3330603 - HYDRAULICS")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1Ewb9TrEfy57SedN0kj7zgnLdvX-hGBsc/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3330604 - STRUCTURAL MECHANICS")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1PI_cUTpGj_7RP3J5HY0XeDlALtFNRg6C/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3330605 SURVEYING")) {
-                    String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1vZc2FyER29IO_ekYTBTkCrcqkREViabz/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -107,7 +107,36 @@ public class Civil_Sem3 extends AppCompatActivity {
 
             @Override
             public void onBtn2click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3330601 - BUILDING MATERIALS")){
+                    String Url="https://drive.google.com/uc?export=download&id=1An8TraFtNQk-xk7c9afQuRvpKsY8I0LK";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330602 - CONSTRUCTION TECHNOLOGY")){
+                    String Url="https://drive.google.com/uc?export=download&id=1z-mJlR63TuoCu57a_HlvdXkgjVkc1MXr";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330603 - HYDRAULICS")){
+                    String Url="https://drive.google.com/uc?export=download&id=1Ewb9TrEfy57SedN0kj7zgnLdvX-hGBsc";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330604 - STRUCTURAL MECHANICS")){
+                    String Url="https://drive.google.com/uc?export=download&id=1PI_cUTpGj_7RP3J5HY0XeDlALtFNRg6C";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330605 SURVEYING")) {
+                    String Url = "https://drive.google.com/uc?export=download&id=1vZc2FyER29IO_ekYTBTkCrcqkREViab";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
         });
                 recyclerView.setAdapter(cd);

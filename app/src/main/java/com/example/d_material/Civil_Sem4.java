@@ -74,37 +74,37 @@ public class Civil_Sem4 extends AppCompatActivity {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("3340601 - STRUCTURAL MECHANICS-II")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1KYuJ9tvsyfeBx4tMHmrCEwdNGofe1ytn/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3340602 - ADVANCED SURVEYING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1RORoCKYGPRDjJSM7v-_UDI1_ZrFH1GFx/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3340603 - BASIC TRANSPORTATION ENGINEERING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1lzIDSsbRogV6R51yl3ID7Z5Yezp8KpWw/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3340604 - WATER RESOURCES MANAGEMENT")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1UWro9xd-nDwkF1OupBEgTog3_ikv8maa/view?usp=sharingg";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3340605 - SOIL MECHANICS")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1iBiIP_ZOcIHl5wADflAhmaRc3utzUmRT/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3340606 COMPUTER AIDED DRAWING")) {
-                    String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/14wifxfqRjUxKdma5TjlQTsddMuBBAoIQ/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -113,7 +113,42 @@ public class Civil_Sem4 extends AppCompatActivity {
 
             @Override
             public void onBtn2click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3340601 - STRUCTURAL MECHANICS-II")){
+                    String Url="https://drive.google.com/uc?export=download&id=1KYuJ9tvsyfeBx4tMHmrCEwdNGofe1ytn";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3340602 - ADVANCED SURVEYING")){
+                    String Url="https://drive.google.com/uc?export=download&id=1RORoCKYGPRDjJSM7v-_UDI1_ZrFH1GFx";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3340603 - BASIC TRANSPORTATION ENGINEERING")){
+                    String Url="https://drive.google.com/uc?export=download&id=1lzIDSsbRogV6R51yl3ID7Z5Yezp8KpWw";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3340604 - WATER RESOURCES MANAGEMENT")){
+                    String Url="https://drive.google.com/uc?export=download&id=1UWro9xd-nDwkF1OupBEgTog3_ikv8maa";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3340605 - SOIL MECHANICS")){
+                    String Url="https://drive.google.com/uc?export=download&id=1iBiIP_ZOcIHl5wADflAhmaRc3utzUmRT";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3340606 COMPUTER AIDED DRAWING")) {
+                    String Url = "https://drive.google.com/uc?export=download&id=14wifxfqRjUxKdma5TjlQTsddMuBBAoIQ";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
         });
         recyclerView.setAdapter(cd);

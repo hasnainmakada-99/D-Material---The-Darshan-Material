@@ -74,32 +74,20 @@ public class Civil_Sem6 extends AppCompatActivity {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("3360601 - DESIGN OF REINFORCED CONCRETE STRUCTURES")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1RedK5In4SAiLN7h8ZmP2B4cjw0-7FtBJ/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3360602 - CONSTRUCTION QUALITY CONTROL & MONITORING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/16W4sO3hxoStg-ZDORDYX8OjTlmuBz7HD/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3360603 - CONSTRUCTION PROJECT MANAGEMENT")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/11QOwEKReuapYfB_ke5XADBZ6FeiYJAK1/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(Url));
-                    startActivity(intent);
-                }
-                else if(arrayList.get(position).contains("3360604 - BUILDING SERVICES")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(Url));
-                    startActivity(intent);
-                }
-                else if(arrayList.get(position).contains("3360605 - MAINTENANCE & REHABILITATION OF STRUCTURES")) {
-                    String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
@@ -107,7 +95,24 @@ public class Civil_Sem6 extends AppCompatActivity {
 
             @Override
             public void onBtn2click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3360601 - DESIGN OF REINFORCED CONCRETE STRUCTURES")){
+                    String Url="https://drive.google.com/uc?export=download&id=1RedK5In4SAiLN7h8ZmP2B4cjw0-7FtBJ";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3360602 - CONSTRUCTION QUALITY CONTROL & MONITORING")){
+                    String Url="https://drive.google.com/uc?export=download&id=16W4sO3hxoStg-ZDORDYX8OjTlmuBz7HD";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3360603 - CONSTRUCTION PROJECT MANAGEMENT")){
+                    String Url="https://drive.google.com/uc?export=download&id=11QOwEKReuapYfB_ke5XADBZ6FeiYJAK1";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
         });
         recyclerView.setAdapter(cd);

@@ -74,49 +74,32 @@ public class Civil_Sem5 extends AppCompatActivity {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("3350601 - DESIGN OF STEEL STRUCTURE")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1QjZOz7kCXanwwXVHl1IhT1BjXFTGZxY-/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3350602 CONCRETE TECHNOLOGY")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1edrWBhzq4FHtB-FPaaNkCbj1351skMJ6/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3350603 - WATER SUPPLY & SANITARY ENGGINEERING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1BT-mnHn5_GYYJVTf0rChEDwl1mxDfJYz/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3350604 - ESTIMATING , COSTING & VALUATION")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1AcIuUr2MLUpAbhv9JrUHC0RNlx5nDXS-/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
-                else if(arrayList.get(position).contains("3350605 - ADVANCE CONSTRUCTION TECHNOLOGY")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(Url));
-                    startActivity(intent);
-                }
-                else if(arrayList.get(position).contains("3350606 - HIGHWAY ENGINEERING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(Url));
-                    startActivity(intent);
-                }
-                else if(arrayList.get(position).contains("3350607 - IRRIGATION ENGINEERING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(Url));
-                    startActivity(intent);
-                }
+
                 else if(arrayList.get(position).contains("3350608 - ENVIRONMENTAL ENGINEERING &POLLUTION CONTROL")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1xgDc7spCeE3_DJJLKvbkP3XikY-lOVMF/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -125,7 +108,37 @@ public class Civil_Sem5 extends AppCompatActivity {
 
             @Override
             public void onBtn2click(ArrayList<String> arrayList, int position) {
+                if(arrayList.get(position).contains("3350601 - DESIGN OF STEEL STRUCTURE")){
+                    String Url="https://drive.google.com/uc?export=download&id=1QjZOz7kCXanwwXVHl1IhT1BjXFTGZxY-";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3350602 CONCRETE TECHNOLOGY")){
+                    String Url="https://drive.google.com/uc?export=download&id=1edrWBhzq4FHtB-FPaaNkCbj1351skMJ6";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3350603 - WATER SUPPLY & SANITARY ENGGINEERING")){
+                    String Url="https://drive.google.com/uc?export=download&id=1BT-mnHn5_GYYJVTf0rChEDwl1mxDfJYz";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3350604 - ESTIMATING , COSTING & VALUATION")){
+                    String Url="https://drive.google.com/uc?export=download&id=1AcIuUr2MLUpAbhv9JrUHC0RNlx5nDXS-";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
 
+                else if(arrayList.get(position).contains("3350608 - ENVIRONMENTAL ENGINEERING &POLLUTION CONTROL")){
+                    String Url="https://drive.google.com/uc?export=download&id=1xgDc7spCeE3_DJJLKvbkP3XikY-lOVMF";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
         });
         recyclerView.setAdapter(cd);
