@@ -74,37 +74,37 @@ public class Mechanical_Sem1 extends AppCompatActivity {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("3300001 - BASIC MATHEMATICS")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1R-KbtiMBq_IZ4iZtAY2VmfL1CCLgjspL/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3300002 - ENGLISH")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1cBULVEYgf2OFqpCHaJ1_0cq8dnW6tpDv/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3300003 - ENVIRONMENT CONSERVATION & HAZARD MANAGEMENT")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1JbFazlaWwZX4peopHu1n_3N7R8oot_EM/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3300004 - ENGINEERING PHYSICS (GROUP-1)")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1ULE9u1qoK32UiUHpx5dWkNlUb20jkUln/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3300007 - BASIC ENGINEERING DRAWING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/13V6U7Sw77wvfUMH6BnJEdMHZTXSFiuc_/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3301901 - ENGINEERING WORKSHOP PRACTICE")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/167RkZAhRhVxoYNxV3YMAaJwCgmkiFTA7/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -113,7 +113,42 @@ public class Mechanical_Sem1 extends AppCompatActivity {
 
             @Override
             public void onBtn2click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3300001 - BASIC MATHEMATICS")){
+                    String Url="https://drive.google.com/uc?export=download&id=1R-KbtiMBq_IZ4iZtAY2VmfL1CCLgjspL";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3300002 - ENGLISH")){
+                    String Url="https://drive.google.com/uc?export=download&id=1cBULVEYgf2OFqpCHaJ1_0cq8dnW6tpDv";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3300003 - ENVIRONMENT CONSERVATION & HAZARD MANAGEMENT")){
+                    String Url="https://drive.google.com/uc?export=download&id=1JbFazlaWwZX4peopHu1n_3N7R8oot_EM";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3300004 - ENGINEERING PHYSICS (GROUP-1)")){
+                    String Url="https://drive.google.com/uc?export=download&id=1ULE9u1qoK32UiUHpx5dWkNlUb20jkUln";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3300007 - BASIC ENGINEERING DRAWING")){
+                    String Url="https://drive.google.com/uc?export=download&id=13V6U7Sw77wvfUMH6BnJEdMHZTXSFiuc_";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3301901 - ENGINEERING WORKSHOP PRACTICE")){
+                    String Url="https://drive.google.com/uc?export=download&id=167RkZAhRhVxoYNxV3YMAaJwCgmkiFTA7";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
         });
         recyclerView.setAdapter(cd);

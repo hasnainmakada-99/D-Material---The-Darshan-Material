@@ -73,38 +73,38 @@ public class Mechanical_Sem4 extends AppCompatActivity {
         Custom_Adapter3 cd=new Custom_Adapter3(Subject_Name, new Custom_Adapter3.onItemClick() {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
-                if(arrayList.get(position).contains("3341901 - MANUFACTURING ENGINEERING - II")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                if(arrayList.get(position).contains("3341901 - MANUFACTURING ENGINEERING – II")){
+                    String Url="https://drive.google.com/file/d/176UHoUjqTmTQpEmF1upBcYVs52UnzXSd/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3341902 - THERMAL ENGINEERING-I")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1zn7LsraZjFV8xslvQgFEmH_ZDgqM_4A1/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3341903 - THEORY OF MACHINES")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1anlmQTNZIzgGqmvGPi6LOWKI55rhKDRd/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3341904 - COMPUTER AIDED DESIGN")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/18Cjzm_Tcc304iuwrM-OEqvup_JbNtSf4/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3341905 - METROLOGY & INSTRUMENTATION")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/140EmrcDvRrNbY6p-G7pnPbNd2jt8nmBi/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3341906 - PLANT MAINTENANCE AND SAFETY")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1Y11x2wZir4cRpkCdKPumDAjzxXDSsqEv/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -113,7 +113,43 @@ public class Mechanical_Sem4 extends AppCompatActivity {
 
             @Override
             public void onBtn2click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3341901 - MANUFACTURING ENGINEERING – II")){
+                    String Url="https://drive.google.com/uc?export=download&id=176UHoUjqTmTQpEmF1upBcYVs52UnzXSd";
+                   // String Url="https://www.youtube.com";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3341902 - THERMAL ENGINEERING-I")){
+                    String Url="https://drive.google.com/uc?export=download&id=1zn7LsraZjFV8xslvQgFEmH_ZDgqM_4A1";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3341903 - THEORY OF MACHINES")){
+                    String Url="https://drive.google.com/uc?export=download&id=1anlmQTNZIzgGqmvGPi6LOWKI55rhKDRd";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3341904 - COMPUTER AIDED DESIGN")){
+                    String Url="https://drive.google.com/uc?export=download&id=18Cjzm_Tcc304iuwrM-OEqvup_JbNtSf4";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3341905 - METROLOGY & INSTRUMENTATION")){
+                    String Url="https://drive.google.com/uc?export=download&id=140EmrcDvRrNbY6p-G7pnPbNd2jt8nmB";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3341906 - PLANT MAINTENANCE AND SAFETY")){
+                    String Url="https://drive.google.com/uc?export=download&id=1Y11x2wZir4cRpkCdKPumDAjzxXDSsqEv";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
         });
         recyclerView.setAdapter(cd);

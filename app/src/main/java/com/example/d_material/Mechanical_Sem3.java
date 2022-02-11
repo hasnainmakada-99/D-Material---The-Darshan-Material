@@ -74,43 +74,37 @@ public class Mechanical_Sem3 extends AppCompatActivity {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("3331901 - MANUFACTURING ENGINEERING-I")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1E5GnIbXmShPJpVRcteEA240KxR1ERBaM/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3331902 - THERMODYNAMICS")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1mWOPgaYonwnkUKDgboQLsTJV6aTgaNe3/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3331903 - FLUID MECHANICS AND HYDRAULIC MACHINES")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse(Url));
-                    startActivity(intent);
-                }
-                else if(arrayList.get(position).contains("3331904 - STRENGTH OF MATERIALS")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1_PED-e3VgIPBYFEpkZY6P7SG0OK675yX/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3331905 - APPLIED ELECTRICAL AND ELECTRONIC ENGINEERING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1Q9S9poOvlcEOxVcZMDc2D7sSDwJqdcAP/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3331906 - COMPUTER AIDED MACHINE DRAWING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1B5WUbJa3DhrbyVuyozn9x-DUNfmsggMl/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3330001 - HUMAN RESOURCE MANAGEMENT")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1Tl9SDduyOIYRjST6loLqXAi65OQ0u4mI/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -119,7 +113,42 @@ public class Mechanical_Sem3 extends AppCompatActivity {
 
             @Override
             public void onBtn2click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3331901 - MANUFACTURING ENGINEERING-I")){
+                    String Url="https://drive.google.com/uc?export=download&id=1E5GnIbXmShPJpVRcteEA240KxR1ERBaM";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3331902 - THERMODYNAMICS")){
+                    String Url="https://drive.google.com/uc?export=download&id=1mWOPgaYonwnkUKDgboQLsTJV6aTgaNe3";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3331903 - FLUID MECHANICS AND HYDRAULIC MACHINES")){
+                    String Url="https://drive.google.com/uc?export=download&id=1_PED-e3VgIPBYFEpkZY6P7SG0OK675yX";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3331905 - APPLIED ELECTRICAL AND ELECTRONIC ENGINEERING")){
+                    String Url="https://drive.google.com/uc?export=download&id=1Q9S9poOvlcEOxVcZMDc2D7sSDwJqdcAP";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3331906 - COMPUTER AIDED MACHINE DRAWING")){
+                    String Url="https://drive.google.com/uc?export=download&id=1B5WUbJa3DhrbyVuyozn9x-DUNfmsggMl";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330001 - HUMAN RESOURCE MANAGEMENT")){
+                    String Url="https://drive.google.com/uc?export=download&id=1Tl9SDduyOIYRjST6loLqXAi65OQ0u4mI";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
         });
         recyclerView.setAdapter(cd);
