@@ -74,31 +74,31 @@ public class Electrical_Sem3 extends AppCompatActivity {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("3330901 - AC CIRCUITS")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1rhG0KtbAAqEUBZaewxjHot6BxfBc0nUf/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3330902 - DC MACHINES AND TRANSFORMER")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1c3sRitgriMTrVJNJFdbeni7vYD8wVmIU/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3330903 - ELECTRICAL INSTRUMENTATION")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1qz14nxIKYIooVlunJwqEe-KPN_Ls-rkV/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3330904 - ELECTRICAL POWER GENERATION")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1kYmmzxZEvis37bJOghqZ3ZA1qdIw0hNl/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3330905 - ELECTRONICS COMPONENTS AND CIRCUITS")) {
-                    String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1Os-AQWll0o74ijvl90i93RfL3UVUPiFI/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -107,7 +107,36 @@ public class Electrical_Sem3 extends AppCompatActivity {
 
             @Override
             public void onBtn2click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3330901 - AC CIRCUITS")){
+                    String Url="https://drive.google.com/uc?export=download&id=1rhG0KtbAAqEUBZaewxjHot6BxfBc0nUf";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330902 - DC MACHINES AND TRANSFORMER")){
+                    String Url="https://drive.google.com/uc?export=download&id=1c3sRitgriMTrVJNJFdbeni7vYD8wVmIU";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330903 - ELECTRICAL INSTRUMENTATION")){
+                    String Url="https://drive.google.com/uc?export=download&id=1qz14nxIKYIooVlunJwqEe-KPN_Ls-rkV";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330904 - ELECTRICAL POWER GENERATION")){
+                    String Url="https://drive.google.com/uc?export=download&id=1kYmmzxZEvis37bJOghqZ3ZA1qdIw0hNl";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3330905 - ELECTRONICS COMPONENTS AND CIRCUITS")) {
+                    String Url = "https://drive.google.com/uc?export=download&id=1Os-AQWll0o74ijvl90i93RfL3UVUPiFI";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
         });
         recyclerView.setAdapter(cd);

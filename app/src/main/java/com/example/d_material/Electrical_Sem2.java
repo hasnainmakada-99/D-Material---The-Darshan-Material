@@ -74,43 +74,43 @@ public class Electrical_Sem2 extends AppCompatActivity {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("1990001 - CONTRIBUTOR PERSONALITY DEVELOPMENT")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1_jCWcSIhPLRLuyYQaPb3xutbPxzEDZYG/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3320002 - ADVANCED MATHEMATICS (GROUP-1)")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1SbcrkVXQ8WT1FiwE4BIsDcc0arnQotqw/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3320004 - BASIC OF CIVIL ENGINEERING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1LyLjepyEfnJOo7zkaV56nAI7PQR7g_WV/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3300005 - BASIC PHYSICS (GROUP-2)")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1Xk9VuF4wiYIokvgMT8fOP5JOlGRkbz0k/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3300007 - BASIC ENGINEERING DRAWING")) {
-                    String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1re2M6CgZc-cS-8DsBUYdMHN_bVzyv3-o/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3320903 - D.C.CIRCUITS")) {
-                    String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1qoJxjKNGnK9uK8hp9sTQZemEcaLaQ2hz/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3320902 - ELECTRICAL ENGINEERING WORKSHOP PRACTICE")) {
-                    String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1JgaBwXVbrmiB35WtmFdDPFVj347t1SyX/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -119,7 +119,48 @@ public class Electrical_Sem2 extends AppCompatActivity {
 
             @Override
             public void onBtn2click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("1990001 - CONTRIBUTOR PERSONALITY DEVELOPMENT")){
+                    String Url="https://drive.google.com/uc?export=download&id=1_jCWcSIhPLRLuyYQaPb3xutbPxzEDZYG";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3320002 - ADVANCED MATHEMATICS (GROUP-1)")){
+                    String Url="https://drive.google.com/uc?export=download&id=1SbcrkVXQ8WT1FiwE4BIsDcc0arnQotqw";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3320004 - BASIC OF CIVIL ENGINEERING")){
+                    String Url="https://drive.google.com/uc?export=download&id=1LyLjepyEfnJOo7zkaV56nAI7PQR7g_WV";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3300005 - BASIC PHYSICS (GROUP-2)")){
+                    String Url="https://drive.google.com/uc?export=download&id=1Xk9VuF4wiYIokvgMT8fOP5JOlGRkbz0k";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3300007 - BASIC ENGINEERING DRAWING")) {
+                    String Url = "https://drive.google.com/uc?export=download&id=1re2M6CgZc-cS-8DsBUYdMHN_bVzyv3-o";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3320903 - D.C.CIRCUITS")) {
+                    String Url = "https://drive.google.com/uc?export=download&id=1qoJxjKNGnK9uK8hp9sTQZemEcaLaQ2hz";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3320902 - ELECTRICAL ENGINEERING WORKSHOP PRACTICE")) {
+                    String Url = "https://drive.google.com/uc?export=download&id=1JgaBwXVbrmiB35WtmFdDPFVj347t1SyX";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
         });
         recyclerView.setAdapter(cd);

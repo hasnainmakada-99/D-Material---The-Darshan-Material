@@ -74,31 +74,31 @@ public class Mechanical_Sem6 extends AppCompatActivity {
             @Override
             public void onBtn1click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("3361901 - COMPUTER AIDED MANUFACTURING(CAM)")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1l11LP-TuJxRRYwDInwho8EKyLod0h-rq/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3361902 - TOOL ENGINEERING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1bisC0RIwMZlxtCvAViC039EqEtrbl4o9/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3361903 - INDUSTRIAL MANAGEMENT")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1UhktoX2eAscxzdYJIJywpkZ2fx7GMYUt/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3361906 - POWER PLANT ENGINEERING")){
-                    String Url="https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url="https://drive.google.com/file/d/1M35dwqQO17haMtcZrNiHp6ebJl9daKg0/view?usp=sharing";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("3361907 - THERMAL SYSTEMS AND ENERGY EFFICIENCY")) {
-                    String Url = "https://drive.google.com/file/d/1aWbeBejUivkL-lbN-__Kvp-us3G6hbKi/view?usp=sharing";
+                    String Url = "https://drive.google.com/file/d/1hYF9HHVv1glaWOYZtDFnU-hNGyQTKrTp/view?usp=sharing";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
@@ -107,7 +107,36 @@ public class Mechanical_Sem6 extends AppCompatActivity {
 
             @Override
             public void onBtn2click(ArrayList<String> arrayList, int position) {
-
+                if(arrayList.get(position).contains("3361901 - COMPUTER AIDED MANUFACTURING(CAM)")){
+                    String Url="https://drive.google.com/uc?export=download&id=1l11LP-TuJxRRYwDInwho8EKyLod0h-rq";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3361902 - TOOL ENGINEERING")){
+                    String Url="https://drive.google.com/uc?export=download&id=1bisC0RIwMZlxtCvAViC039EqEtrbl4o9";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3361903 - INDUSTRIAL MANAGEMENT")){
+                    String Url="https://drive.google.com/uc?export=download&id=1UhktoX2eAscxzdYJIJywpkZ2fx7GMYUt";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3361906 - POWER PLANT ENGINEERING")){
+                    String Url="https://drive.google.com/uc?export=download&id=1M35dwqQO17haMtcZrNiHp6ebJl9daKg0";
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
+                else if(arrayList.get(position).contains("3361907 - THERMAL SYSTEMS AND ENERGY EFFICIENCY")) {
+                    String Url = "https://drive.google.com/uc?export=download&id=1hYF9HHVv1glaWOYZtDFnU-hNGyQTKrTp";
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(Url));
+                    startActivity(intent);
+                }
             }
         });
         recyclerView.setAdapter(cd);

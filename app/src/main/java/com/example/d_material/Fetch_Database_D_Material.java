@@ -16,16 +16,6 @@ public class Fetch_Database_D_Material {
     public static final String URL_TAG_NAME7="Language";
     public static final String JSON_ARRAY7="result";
 
-    // For Fetching Semester_1_Computer_Engineering_English
-    //    public static final String URL_PATH3="http://192.168.0.108/D-Material-The-Darshan-Material-App/Fetch_Computer_Sem_1_English.php";
-    //    public static final String URL_TAG_NAME3="Subject_Name";
-    //    public static final String JSON_ARRAY3="result";
-
-    // For Fetching Semester_1_Computer_Engineering_Gujarati
-    //    public static final String URL_PATH4="http://192.168.0.108/D-Material-The-Darshan-Material-App/Fetch_Computer_Sem_1_Gujarati.php";
-    //    public static final String URL_TAG_NAME4="Subject_Name";
-    //    public static final String JSON_ARRAY4="result";
-
     // For Fetching Semester_3_Computer_Engineering_English
     public static final String URL_PATH5="http://dmaterial.titanslab.in/Fetch_Computer_Sem_3_English.php";
     public static final String URL_TAG_NAME5="Subject_Name";
@@ -311,5 +301,15 @@ public class Fetch_Database_D_Material {
     public static final String URL_PATH62="http://dmaterial.titanslab.in/Electrical_Sem6.php";
     public static final String URL_TAG_NAME62="Subject_name";
     public static final String JSON_ARRAY62="result";
+
+    // for fetching computer sem 1
+    public static final String URL_PATH63="http://dmaterial.titanslab.in/Computer_Sem1.php";
+    public static final String URL_TAG_NAME63="Subject_name";
+    public static final String JSON_ARRAY63="result";
+
+    // for fetching computer sem 2
+    public static final String URL_PATH64="http://dmaterial.titanslab.in/Computer_Sem2.php";
+    public static final String URL_TAG_NAME64="Subject_name";
+    public static final String JSON_ARRAY64="result";
 
 }

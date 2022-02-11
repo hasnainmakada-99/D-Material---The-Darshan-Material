@@ -174,7 +174,15 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
         String language= spinner3.getSelectedItem().toString();
 
         if(Branch_Name.equals("Computer Engineering")) {
-            if (Semester_Name.equals("Semester 3")) {
+            if(Semester_Name.equals("Semester 1")){
+                Intent intent=new Intent(getApplicationContext(), Computer_Sem1.class);
+                startActivity(intent);
+            }
+            else if(Semester_Name.equals("Semester 2")){
+                Intent intent=new Intent(getApplicationContext(), Computer_Sem2.class);
+                startActivity(intent);
+            }
+           else if (Semester_Name.equals("Semester 3")) {
                 if (language.equals("English")) {
                     Intent intent = new Intent(getApplicationContext(), Computer_Sem_3_English.class);
                     startActivity(intent);
