@@ -144,7 +144,7 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                error.printStackTrace();
             }
         });
         RequestQueue requestQueue= Volley.newRequestQueue(this);

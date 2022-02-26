@@ -3,6 +3,9 @@
     package="com.example.d_material">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 
     <application
         android:allowBackup="true"
@@ -10,6 +13,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.DMaterial">
         <activity
             android:name=".Computer_Sem2"
@@ -253,7 +257,7 @@
             android:parentActivityName=".Computer_Sem_3_English" />
         <activity
             android:name=".Select_Branch_Sem_Language"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".Computer_Sem_3_Gujarati"
             android:exported="false"
