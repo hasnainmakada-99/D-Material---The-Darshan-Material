@@ -112,33 +112,33 @@ public class Computer_Sem6_dwsl_eng extends AppCompatActivity {
             @Override
             public void onbutton3click(ArrayList<String> arrayList, int position) {
                 if(arrayList.get(position).contains("Unit 1 - Form Designing using Canvas and CSS")){
-                    String Url="https://drive.google.com/uc?export=download&id=1YfNMaSc_nZUlG5WdSg8UlUWha09iK0cy";
+                    String Url="https://drive.google.com/uc?export=download&id=1__mJoRtXN6rNVuRoyNmS5O4iSkFk8Tlh";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 2 - Working with  JavaScript")) {
-                    String Url = "https://drive.google.com/uc?export=download&id=19hNrUkAVOEnWkHZwoj1M9M2ieOq_7G7D";
+                    String Url = "https://drive.google.com/uc?export=download&id=1b5Y0G7B0lHmKbyLR8oeJ3C5PQvDvbIL1";
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).contains("Unit 3 - Object Models in JavaScript")){
-                    String Url="https://drive.google.com/uc?export=download&id=18J2ojHhvKcScEohn8JbecXe-mezRqJcJ";
+                    String Url="https://drive.google.com/uc?export=download&id=1tB1jq5olwJPxiGL4r4P3MDq0dLEgn7kH";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
                 else if(arrayList.get(position).equals("Unit 4 - Working with jQuery")){
-                    String Url="https://drive.google.com/uc?export=download&id=1PfXHzoNhlzjUTwRl1D9QQ3jgtISsUxvV";
+                    String Url="https://drive.google.com/uc?export=download&id=1T0Vwbq6iS_Wws5SfZL4NQWy_L7bEOQbU";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
                 }
 
                 else if(arrayList.get(position).contains("Unit 5 - Working with Ajax")){
-                    String Url="https://drive.google.com/uc?export=download&id=10df4WbN_BrMoZKkXAbw9szWfiuozRqiq";
+                    String Url="https://drive.google.com/uc?export=download&id=1lmIr1TH5z8-k-IWwwIxHx2q-eG5qdyrK";
                     Intent intent=new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(Url));
                     startActivity(intent);
