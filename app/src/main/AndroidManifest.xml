@@ -3,9 +3,8 @@
     package="com.example.d_material">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -13,259 +12,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.DMaterial">
+        android:theme="@style/Theme.DMaterial"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".Computer_Sem2"
+            android:name=".Subjects_Units"
+            android:exported="false" />
+        <activity
+            android:name=".Subjects_Activity"
             android:exported="false"
             android:parentActivityName=".Select_Branch_Sem_Language"/>
-        <activity
-            android:name=".Computer_Sem1"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language"/>
-        <activity
-            android:name=".Electrical_Sem6"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Electrical_Sem5"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Electrical_Sem4"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Electrical_Sem3"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Electrical_Sem2"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Electrical_Sem1"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Mechanical_Sem6"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Mechanical_Sem5"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Mechanical_Sem4"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Mechanical_Sem3"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Mechanical_Sem2"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Mechanical_Sem1"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Civil_Sem6"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Civil_Sem5"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Civil_Sem4"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Civil_Sem3"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Civil_Sem2"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Civil_Sem1"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Computer_Sem6_awt_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem6_guj" />
-        <activity
-            android:name=".Computer_Sem6_dwsl_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem6_guj" />
-        <activity
-            android:name=".Computer_Sem6_ajp_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem6_guj" />
-        <activity
-            android:name=".Computer_Sem6_guj"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Computer_Sem6_awt_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem6_eng" />
-        <activity
-            android:name=".Computer_Sem6_dwsl_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem6_eng" />
-        <activity
-            android:name=".Computer_Sem6_ajp_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem6_eng" />
-        <activity
-            android:name=".Computer_Sem6_eng"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Computer_Sem5_mat_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem5_guj" />
-        <activity
-            android:name=".Computer_Sem5_java_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem5_guj" />
-        <activity
-            android:name=".Computer_Sem5_dwpd_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem5_guj" />
-        <activity
-            android:name=".Computer_Sem5_cmt_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem5_guj" />
-        <activity
-            android:name=".Computer_Sem5_mat_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem5_eng" />
-        <activity
-            android:name=".Computer_Sem5_java_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem5_eng" />
-        <activity
-            android:name=".Computer_Sem5_dwpd_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem5_eng" />
-        <activity
-            android:name=".Computer_Sem5_cmt_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem5_eng" />
-        <activity
-            android:name=".Computer_Sem5_guj"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Computer_Sem5_eng"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Computer_Sem4_coa_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem4_guj" />
-        <activity
-            android:name=".Computer_Sem4_dotnet_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem4_guj" />
-        <activity
-            android:name=".Compute_Sem4_fsd_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem4_guj" />
-        <activity
-            android:name=".Computer_Sem4_cn_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem4_guj" />
-        <activity
-            android:name=".Computer_Sem4_adbms_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem4_guj" />
-        <activity
-            android:name=".Computer_Sem4_coa_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem4_eng" />
-        <activity
-            android:name=".Computer_Sem4_dotnet_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem4_eng" />
-        <activity
-            android:name=".Computer_Sem4_fsd_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem4_eng" />
-        <activity
-            android:name=".Computer_Sem4_cn_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem4_eng" />
-        <activity
-            android:name=".Computer_Sem4_adbms_eng"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem4_eng" />
-        <activity
-            android:name=".Computer_Sem4_guj"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Computer_Sem4_eng"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Computer_Sem3_malp_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_Gujarati" />
-        <activity
-            android:name=".Computer_Sem3_ds_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_Gujarati" />
-        <activity
-            android:name=".Computer_Sem3_dbms_guj"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_Gujarati" />
-        <activity
-            android:name=".Computer_Sem_3_Cpp_Gujarati"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_Gujarati" />
-        <activity
-            android:name=".Computer_Sem3_malp_English"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_English" />
-        <activity
-            android:name=".Computer_Sem3_Ds_English"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_English" />
-        <activity
-            android:name=".Computer_Sem3_dbms_English"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_English" />
-        <activity
-            android:name=".Computer_Sem_3_CPP_English"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_English" />
-        <activity
-            android:name=".Computer_Sem_3_OS_Gujarati"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_Gujarati" />
-        <activity
-            android:name=".Computer_Sem_3_OS_English"
-            android:exported="false"
-            android:parentActivityName=".Computer_Sem_3_English" />
         <activity
             android:name=".Select_Branch_Sem_Language"
-            android:exported="false"/>
-        <activity
-            android:name=".Computer_Sem_3_Gujarati"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
-        <activity
-            android:name=".Computer_Sem_3_English"
-            android:exported="false"
-            android:parentActivityName=".Select_Branch_Sem_Language" />
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

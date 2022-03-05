@@ -105,7 +105,7 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                error.printStackTrace();
             }
         });
         RequestQueue requestQueue= Volley.newRequestQueue(this);
@@ -172,147 +172,18 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
         String Branch_Name=spinner1.getSelectedItem().toString();
         String Semester_Name=spinner2.getSelectedItem().toString();
         String language= spinner3.getSelectedItem().toString();
-
-        if(Branch_Name.equals("Computer Engineering")) {
-            if(Semester_Name.equals("Semester 1")){
-                Intent intent=new Intent(getApplicationContext(), Computer_Sem1.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 2")){
-                Intent intent=new Intent(getApplicationContext(), Computer_Sem2.class);
-                startActivity(intent);
-            }
-           else if (Semester_Name.equals("Semester 3")) {
-                if (language.equals("English")) {
-                    Intent intent = new Intent(getApplicationContext(), Computer_Sem_3_English.class);
-                    startActivity(intent);
-                } else if (language.equals("Gujarati")) {
-                    Intent intent = new Intent(getApplicationContext(), Computer_Sem_3_Gujarati.class);
-                    startActivity(intent);
-                }
-            }
-            else if(Semester_Name.equals("Semester 4")){
-                if(language.equals("English")){
-                    Intent intent=new Intent(getApplicationContext(), Computer_Sem4_eng.class);
-                    startActivity(intent);
-                }
-                else if(language.equals("Gujarati")){
-                    Intent intent=new Intent(getApplicationContext(), Computer_Sem4_guj.class);
-                    startActivity(intent);
-                }
-            }
-            else if(Semester_Name.equals("Semester 5")){
-                if(language.equals("English")){
-                    Intent intent=new Intent(getApplicationContext(), Computer_Sem5_eng.class);
-                    startActivity(intent);
-                }
-                else if(language.equals("Gujarati")){
-                    Intent intent=new Intent(getApplicationContext(), Computer_Sem5_guj.class);
-                    startActivity(intent);
-                }
-            }
-            else if(Semester_Name.equals("Semester 6")){
-                if(language.equals("English")){
-                    Intent intent =new Intent(getApplicationContext(), Computer_Sem6_eng.class);
-                    startActivity(intent);
-                }
-                else if(language.equals("Gujarati")){
-                    Intent intent=new Intent(getApplicationContext(), Computer_Sem6_guj.class);
-                    startActivity(intent);
-                }
-            }
-            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester") || language.equals("English") || language.equals("Gujarati"))
-            {
-                Toast.makeText(getApplicationContext(), "Please Select Branch & Semester", Toast.LENGTH_SHORT).show();
-            }
+        if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester"))
+        {
+            Toast.makeText(getApplicationContext(), "Please Select Branch & Semester", Toast.LENGTH_SHORT).show();
         }
-        else if(Branch_Name.equals("Civil Engineering")){
-            if(Semester_Name.equals("Semester 1")){
-                Intent intent=new Intent(getApplicationContext(), Civil_Sem1.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 2")){
-                Intent intent=new Intent(getApplicationContext(), Civil_Sem2.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 3")){
-                Intent intent=new Intent(getApplicationContext(), Civil_Sem3.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 4")){
-                Intent intent=new Intent(getApplicationContext(), Civil_Sem4.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 5")){
-                Intent intent=new Intent(getApplicationContext(), Civil_Sem5.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 6")){
-                Intent intent=new Intent(getApplicationContext(), Civil_Sem6.class);
-                startActivity(intent);
-            }
-            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester") || language.equals("English") || language.equals("Gujarati"))
-            {
-                Toast.makeText(getApplicationContext(), "Please Select Branch & Semester", Toast.LENGTH_SHORT).show();
-            }
+        else {
+            Intent intent = new Intent(getApplicationContext(), Subjects_Activity.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("Branch", spinner1.getSelectedItem().toString());
+            bundle.putString("Semester", spinner2.getSelectedItem().toString());
+            bundle.putString("language", spinner3.getSelectedItem().toString());
+            intent.putExtras(bundle);
+            startActivity(intent);
         }
-
-        else if(Branch_Name.equals("Mechanical Engineering")){
-            if(Semester_Name.equals("Semester 1")){
-                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem1.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 2")){
-                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem2.class);
-                startActivity(intent);
-            }
-
-            else if(Semester_Name.equals("Semester 3")){
-                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem3.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 4")){
-                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem4.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 5")){
-                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem5.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 6")){
-                Intent intent=new Intent(getApplicationContext(), Mechanical_Sem6.class);
-                startActivity(intent);
-            }
-        }
-        else if(Branch_Name.equals("Electrical Engineering")){
-            if(Semester_Name.equals("Semester 1")){
-                Intent intent=new Intent(getApplicationContext(), Electrical_Sem1.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 2")){
-                Intent intent=new Intent(getApplicationContext(), Electrical_Sem2.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 3")){
-                Intent intent=new Intent(getApplicationContext(), Electrical_Sem3.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 4")){
-                Intent intent=new Intent(getApplicationContext(), Electrical_Sem4.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 5")){
-                Intent intent=new Intent(getApplicationContext(), Electrical_Sem5.class);
-                startActivity(intent);
-            }
-            else if(Semester_Name.equals("Semester 6")){
-                Intent intent=new Intent(getApplicationContext(), Electrical_Sem6.class);
-                startActivity(intent);
-            }
-        }
-            else if(Branch_Name.equals("Select Branch") || Semester_Name.equals("Select Semester") || language.equals("English") || language.equals("Gujarati"))
-            {
-                Toast.makeText(getApplicationContext(), "Please Select Branch & Semester", Toast.LENGTH_SHORT).show();
-            }
     }
 }
