@@ -43,12 +43,12 @@ public class Subjects_Activity extends AppCompatActivity {
         {
             if(bundle.getString("Semester").equals("Semester 1")) {
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Computer Engineering Semester 1" + "</font>"));
-                StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH63, new Response.Listener<String>() {
+                StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
                             JSONObject jsonObject = new JSONObject(response);
-                            result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY63);
+                            result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -66,12 +66,12 @@ public class Subjects_Activity extends AppCompatActivity {
 
             else if(bundle.getString("Semester").equals("Semester 2")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Computer Engineering Semester 2"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH64, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY64);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -91,12 +91,12 @@ public class Subjects_Activity extends AppCompatActivity {
             else if(bundle.getString("Semester").equals("Semester 3")){
                 if(bundle.getString("language").equals("English")) {
                     Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Computer Engineering Semester 3" + "</font>"));
-                    StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH5, new Response.Listener<String>() {
+                    StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             try {
                                 JSONObject jsonObject = new JSONObject(response);
-                                result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY5);
+                                result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                                 Fetch_Subject_Name(result);
                             } catch (Exception e) {
                                 e.printStackTrace();
@@ -114,12 +114,12 @@ public class Subjects_Activity extends AppCompatActivity {
 
                 else if(bundle.getString("language").equals("Gujarati")){
                     Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Computer Engineering Semester 3"+"</font>"));
-                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH6, new Response.Listener<String>() {
+                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             try{
                                 JSONObject jsonObject=new JSONObject(response);
-                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY6);
+                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                                 Fetch_Subject_Name(result);
                             }
                             catch (Exception e){
@@ -140,12 +140,12 @@ public class Subjects_Activity extends AppCompatActivity {
             else if(bundle.getString("Semester").equals("Semester 4")){
                 if(bundle.getString("language").equals("English")){
                     Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Computer Engineering Semester 4" + "</font>"));
-                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH18, new Response.Listener<String>() {
+                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             try{
                                 JSONObject jsonObject=new JSONObject(response);
-                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY18);
+                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                                 Fetch_Subject_Name(result);
                             }
                             catch (Exception e){
@@ -164,12 +164,12 @@ public class Subjects_Activity extends AppCompatActivity {
 
                 else if(bundle.getString("language").equals("Gujarati")){
                     Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Computer Engineering Semester 4" + "</font>"));
-                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH18, new Response.Listener<String>() {
+                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             try{
                                 JSONObject jsonObject=new JSONObject(response);
-                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY18);
+                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                                 Fetch_Subject_Name(result);
                             }
                             catch (Exception e){
@@ -190,12 +190,12 @@ public class Subjects_Activity extends AppCompatActivity {
             else if(bundle.getString("Semester").equals("Semester 5")){
                 if(bundle.getString("language").equals("English")){
                     Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Computer Engineering Semester 5" + "</font>"));
-                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH29, new Response.Listener<String>() {
+                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             try{
                                 JSONObject jsonObject=new JSONObject(response);
-                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY29);
+                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                                 Fetch_Subject_Name(result);
                             }
                             catch (Exception e){
@@ -214,12 +214,12 @@ public class Subjects_Activity extends AppCompatActivity {
 
                 else if(bundle.getString("language").equals("Gujarati")){
                     Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Computer Engineering Semester 5" + "</font>"));
-                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH29, new Response.Listener<String>() {
+                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             try{
                                 JSONObject jsonObject=new JSONObject(response);
-                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY29);
+                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                                 Fetch_Subject_Name(result);
                             }
                             catch (Exception e){
@@ -240,12 +240,12 @@ public class Subjects_Activity extends AppCompatActivity {
             else if(bundle.getString("Semester").equals("Semester 6")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Computer Engineering Semester 6" + "</font>"));
                 if(bundle.getString("language").equals("English")){
-                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH38, new Response.Listener<String>() {
+                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             try{
                                 JSONObject jsonObject=new JSONObject(response);
-                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY38);
+                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                                 Fetch_Subject_Name(result);
                             }
                             catch (Exception e){
@@ -262,12 +262,12 @@ public class Subjects_Activity extends AppCompatActivity {
                     requestQueue.add(stringRequest);
                 }
                 else if(bundle.getString("language").equals("Gujarati")){
-                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH38, new Response.Listener<String>() {
+                    StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             try{
                                 JSONObject jsonObject=new JSONObject(response);
-                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY38);
+                                result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                                 Fetch_Subject_Name(result);
                             }
                             catch (Exception e){
@@ -288,12 +288,12 @@ public class Subjects_Activity extends AppCompatActivity {
 
         else if(bundle.getString("Branch").equals("Civil Engineering")){
             if(bundle.getString("Semester").equals("Semester 1")){
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH45, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY45);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -311,12 +311,12 @@ public class Subjects_Activity extends AppCompatActivity {
             }
 
             else if(bundle.getString("Semester").equals("Semester 2")){
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH46, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY46);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -334,12 +334,12 @@ public class Subjects_Activity extends AppCompatActivity {
             }
 
             else if(bundle.getString("Semester").equals("Semester 3")){
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH47, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY47);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -357,12 +357,12 @@ error.printStackTrace();
             }
 
             else if(bundle.getString("Semester").equals("Semester 4")){
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH48, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY48);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -380,12 +380,12 @@ error.printStackTrace();
             }
 
             else if(bundle.getString("Semester").equals("Semester 5")){
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH49, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY49);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -403,12 +403,12 @@ error.printStackTrace();
             }
 
             else if(bundle.getString("Semester").equals("Semester 6")){
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH50, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY50);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -429,12 +429,12 @@ error.printStackTrace();
         else if(bundle.getString("Branch").equals("Mechanical Engineering")){
             if(bundle.getString("Semester").equals("Semester 1")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Mechanical Engineering Semester 1"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH51, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY51);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -452,12 +452,12 @@ error.printStackTrace();
             }
             else if(bundle.getString("Semester").equals("Semester 2")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Mechanical Engineering Semester 2"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH52, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY52);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -475,12 +475,12 @@ error.printStackTrace();
             }
             else if(bundle.getString("Semester").equals("Semester 3")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Mechanical Engineering Semester 3"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH53, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY53);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -498,12 +498,12 @@ error.printStackTrace();
             }
             else if(bundle.getString("Semester").equals("Semester 4")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Mechanical Engineering Semester 4"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH54, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY54);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -521,12 +521,12 @@ error.printStackTrace();
             }
             else if(bundle.getString("Semester").equals("Semester 5")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Mechanical Engineering Semester 5"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH55, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY55);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -544,12 +544,12 @@ error.printStackTrace();
             }
             else if(bundle.getString("Semester").equals("Semester 6")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Mechanical Engineering Semester 6"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH56, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY56);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -570,12 +570,12 @@ error.printStackTrace();
         else if(bundle.getString("Branch").equals("Electrical Engineering")){
             if(bundle.getString("Semester").equals("Semester 1")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Electrical Engineering Semester 1"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH57, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY57);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -593,12 +593,12 @@ error.printStackTrace();
             }
             else if(bundle.getString("Semester").equals("Semester 2")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Electrical Engineering Semester 2"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH58, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY58);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -616,12 +616,12 @@ error.printStackTrace();
             }
             else if(bundle.getString("Semester").equals("Semester 3")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Electrical Engineering Semester 3"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH59, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY59);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -639,12 +639,12 @@ error.printStackTrace();
             }
             else if(bundle.getString("Semester").equals("Semester 4")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Electrical Engineering Semester 4"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH60, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY60);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -662,12 +662,12 @@ error.printStackTrace();
             }
             else if(bundle.getString("Semester").equals("Semester 5")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Electrical Engineering Semester 5"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH61, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY61);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -685,12 +685,12 @@ error.printStackTrace();
             }
             else if(bundle.getString("Semester").equals("Semester 6")){
                 Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Electrical Engineering Semester 6"+"</font>"));
-                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH62, new Response.Listener<String>() {
+                StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH100, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try{
                             JSONObject jsonObject=new JSONObject(response);
-                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY62);
+                            result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY100);
                             Fetch_Subject_Name(result);
                         }
                         catch (Exception e){
@@ -718,7 +718,7 @@ error.printStackTrace();
                 for (int i = 0; i < jo.length(); i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME63));
+                        Subject_Name.add(j.getString("Computer_Sem1"));
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -793,7 +793,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME64));
+                        Subject_Name.add(j.getString("Computer_Sem2"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -867,7 +867,7 @@ error.printStackTrace();
                     for (int i = 0; i < jo.length(); i++) {
                         try {
                             JSONObject j = jo.getJSONObject(i);
-                            Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME5));
+                            Subject_Name.add(j.getString("Computer_Sem3"));
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -896,7 +896,7 @@ error.printStackTrace();
                     for (int i = 0; i <jo.length() ; i++) {
                         try {
                             JSONObject j = jo.getJSONObject(i);
-                            Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME6));
+                            Subject_Name.add(j.getString("Computer_Sem3"));
                         }
                         catch (Exception e){
                             e.printStackTrace();
@@ -926,7 +926,7 @@ error.printStackTrace();
                     for (int i = 0; i <jo.length() ; i++) {
                         try {
                             JSONObject j = jo.getJSONObject(i);
-                            Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME18));
+                            Subject_Name.add(j.getString("Computer_Sem4"));
                         }
                         catch (Exception e){
                             e.printStackTrace();
@@ -955,7 +955,7 @@ error.printStackTrace();
                     for (int i = 0; i <jo.length() ; i++) {
                         try {
                             JSONObject j = jo.getJSONObject(i);
-                            Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME18));
+                            Subject_Name.add(j.getString("Computer_Sem4"));
                         }
                         catch (Exception e){
                             e.printStackTrace();
@@ -986,7 +986,7 @@ error.printStackTrace();
                     for (int i = 0; i <jo.length() ; i++) {
                         try {
                             JSONObject j = jo.getJSONObject(i);
-                            Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME29));
+                            Subject_Name.add(j.getString("Computer_Sem5"));
                         }
                         catch (Exception e){
                             e.printStackTrace();
@@ -1015,7 +1015,7 @@ error.printStackTrace();
                     for (int i = 0; i <jo.length() ; i++) {
                         try {
                             JSONObject j = jo.getJSONObject(i);
-                            Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME29));
+                            Subject_Name.add(j.getString("Computer_Sem5"));
                         }
                         catch (Exception e){
                             e.printStackTrace();
@@ -1046,7 +1046,7 @@ error.printStackTrace();
                     for (int i = 0; i <jo.length() ; i++) {
                         try {
                             JSONObject j = jo.getJSONObject(i);
-                            Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME38));
+                            Subject_Name.add(j.getString("Computer_Sem6"));
                         }
                         catch (Exception e){
                             e.printStackTrace();
@@ -1075,7 +1075,7 @@ error.printStackTrace();
                     for (int i = 0; i <jo.length() ; i++) {
                         try {
                             JSONObject j = jo.getJSONObject(i);
-                            Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME38));
+                            Subject_Name.add(j.getString("Computer_Sem6"));
                         }
                         catch (Exception e){
                             e.printStackTrace();
@@ -1108,7 +1108,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME45));
+                        Subject_Name.add(j.getString("Civil_Sem1"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -1207,7 +1207,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME46));
+                        Subject_Name.add(j.getString("Civil_Sem2"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -1315,7 +1315,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME47));
+                        Subject_Name.add(j.getString("Civil_Sem3"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -1399,7 +1399,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME48));
+                        Subject_Name.add(j.getString("Civil_Sem4"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -1496,7 +1496,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME49));
+                        Subject_Name.add(j.getString("Civil_Sem5"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -1583,7 +1583,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME50));
+                        Subject_Name.add(j.getString("Civil_Sem6"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -1646,7 +1646,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME51));
+                        Subject_Name.add(j.getString("Mech_Sem1"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -1741,7 +1741,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME52));
+                        Subject_Name.add(j.getString("Mech_Sem2"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -1836,7 +1836,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME53));
+                        Subject_Name.add(j.getString("Mech_Sem3"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -1931,7 +1931,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME54));
+                        Subject_Name.add(j.getString("Mech_Sem4"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -2027,7 +2027,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME55));
+                        Subject_Name.add(j.getString("Mech_Sem5"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -2122,7 +2122,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME56));
+                        Subject_Name.add(j.getString("Mech_Sem6"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -2208,7 +2208,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME57));
+                        Subject_Name.add(j.getString("Elect_Sem1"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -2304,7 +2304,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME58));
+                        Subject_Name.add(j.getString("Elect_Sem2"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -2411,7 +2411,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME59));
+                        Subject_Name.add(j.getString("Elect_Sem3"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -2494,7 +2494,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME60));
+                        Subject_Name.add(j.getString("Elect_Sem4"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -2577,7 +2577,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME61));
+                        Subject_Name.add(j.getString("Elect_Sem5"));
                     }
                     catch (Exception e){
                         e.printStackTrace();
@@ -2660,7 +2660,7 @@ error.printStackTrace();
                 for (int i = 0; i <jo.length() ; i++) {
                     try {
                         JSONObject j = jo.getJSONObject(i);
-                        Subject_Name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME62));
+                        Subject_Name.add(j.getString("Elect_Sem6"));
                     }
                     catch (Exception e){
                         e.printStackTrace();

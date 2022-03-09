@@ -51,12 +51,12 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
 
     // For Fetching Branch
     public void Get_Branch(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH1, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY1);
                     Get_Branch_Names(result);
                 }
                 catch (Exception e){
@@ -66,7 +66,7 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                error.printStackTrace();
             }
         });
         RequestQueue requestQueue= Volley.newRequestQueue(this);
@@ -78,7 +78,7 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
         for (int i = 0; i <jo.length() ; i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
-                branch_name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME));
+                branch_name.add(j.getString("branch"));
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -90,12 +90,12 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
 
     // For Fetching Semester
     public void Get_Semester(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH2, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH1, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY2);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY1);
                     Get_Semester_Names(result);
                 }
                 catch (Exception e){
@@ -117,7 +117,7 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
         for (int i = 0; i <jo.length() ; i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
-                semester_name.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME2));
+                semester_name.add(j.getString("semester"));
             }
             catch (Exception e){
                 e.printStackTrace();
@@ -129,12 +129,12 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
 
     // For fetching language
     public void getlanguage(){
-        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH7, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH1, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
-                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY7);
+                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY1);
                     fetch_languages(result);
                 }
                 catch (Exception e){
@@ -157,7 +157,7 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
         for (int i = 0; i <jo.length() ; i++) {
             try {
                 JSONObject j = jo.getJSONObject(i);
-                language.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME7));
+                language.add(j.getString("language"));
             }
             catch (Exception e){
                 e.printStackTrace();

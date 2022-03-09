@@ -41,12 +41,12 @@ public class Subjects_Units extends AppCompatActivity {
                 if (bundle.getString("language").equals("English")) {
                     if (bundle.getString("Subject").equals("3330701 - OPERATING SYSTEM")) {
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Operating System" + "</font>"));
-                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH8, new Response.Listener<String>() {
+                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try {
                                     JSONObject jsonObject = new JSONObject(response);
-                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY8);
+                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 } catch (Exception e) {
                                     e.printStackTrace();
@@ -62,12 +62,12 @@ public class Subjects_Units extends AppCompatActivity {
                         requestQueue.add(stringRequest);
                     } else if (bundle.getString("Subject").equals("3330702 - PROGRAMMING IN C++")) {
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Programming in C++" + "</font>"));
-                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH10, new Response.Listener<String>() {
+                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try {
                                     JSONObject jsonObject = new JSONObject(response);
-                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY10);
+                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 } catch (Exception e) {
                                     e.printStackTrace();
@@ -83,12 +83,12 @@ public class Subjects_Units extends AppCompatActivity {
                         requestQueue.add(stringRequest);
                     } else if (bundle.getString("Subject").contains("3330703 - DATABASE MANAGEMENT SYSTEM")) {
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Database Management System" + "</font>"));
-                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH11, new Response.Listener<String>() {
+                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try {
                                     JSONObject jsonObject = new JSONObject(response);
-                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY11);
+                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 } catch (Exception e) {
                                     e.printStackTrace();
@@ -104,12 +104,12 @@ public class Subjects_Units extends AppCompatActivity {
                         requestQueue.add(stringRequest);
                     } else if (bundle.getString("Subject").contains("3330704 - DATA STRUCTURE")) {
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Data Structures" + "</font>"));
-                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH12, new Response.Listener<String>() {
+                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try {
                                     JSONObject jsonObject = new JSONObject(response);
-                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY12);
+                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 } catch (Exception e) {
                                     e.printStackTrace();
@@ -125,12 +125,12 @@ public class Subjects_Units extends AppCompatActivity {
                         requestQueue.add(stringRequest);
                     } else if (bundle.getString("Subject").contains("3330705 - MICROPROCESSOR & ASSEMBLY LANGUAGE PROGRAMMING")) {
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" + "Microprocessor & Assembly Language Programming" + "</font>"));
-                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH13, new Response.Listener<String>() {
+                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try {
                                     JSONObject jsonObject = new JSONObject(response);
-                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY13);
+                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 } catch (Exception e) {
                                     e.printStackTrace();
@@ -150,12 +150,12 @@ public class Subjects_Units extends AppCompatActivity {
                 else if(bundle.getString("language").equals("Gujarati")){
                     if (bundle.getString("Subject").equals("3330701 - OPERATING SYSTEM")) {
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Operating System"+"</font>"));
-                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH9, new Response.Listener<String>() {
+                        StringRequest stringRequest = new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
-                            public void onResponse(String response) {
+                            public void onResponse(String response){
                                 try {
                                     JSONObject jsonObject = new JSONObject(response);
-                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY9);
+                                    result = jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 } catch (Exception e) {
                                     e.printStackTrace();
@@ -173,12 +173,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").equals("3330702 - PROGRAMMING IN C++")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Programming in C++"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH14, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY14);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -197,12 +197,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3330703 - DATABASE MANAGEMENT SYSTEM")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Database Management System"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH15, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY15);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -221,12 +221,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3330704 - DATA STRUCTURE")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Data Structures"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH16, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY16);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -245,12 +245,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3330705 - MICROPROCESSOR & ASSEMBLY LANGUAGE PROGRAMMING")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Microprocessor & Assembly Language Programming"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH17, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY17);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -273,12 +273,12 @@ public class Subjects_Units extends AppCompatActivity {
                 if(bundle.getString("language").equals("English")){
                     if(bundle.getString("Subject").contains("3340701 - ADVANCE DATABASE MANAGEMENT SYSTEM")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Advance Database Management System"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH19, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY19);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -297,12 +297,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3340702 - COMPUTER NETWORKS")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Computer Networks"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH20, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY20);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -321,12 +321,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3341603 - FUNDAMENTALS OF SOFTWARE DEVELOPMENT")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Fundamentals of Software Development"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH21, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY21);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -345,12 +345,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3340704 - .NET PROGRAMMING")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +".Net Programming"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH27, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY27);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -369,12 +369,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3340705 - COMPUTER ORGANIZATION AND ARCHITECTURE")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Computer Organization and Architecture"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH23, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY23);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -395,12 +395,12 @@ public class Subjects_Units extends AppCompatActivity {
                 else if(bundle.getString("language").equals("Gujarati")){
                     if(bundle.getString("Subject").contains("3340701 - ADVANCE DATABASE MANAGEMENT SYSTEM")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Advance Database Management System"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH24, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY24);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -419,12 +419,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3340702 - COMPUTER NETWORKS")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Computer Networks"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH25, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY25);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -443,12 +443,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3341603 - FUNDAMENTALS OF SOFTWARE DEVELOPMENT")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Fundamentals of Software Development"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH26, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY26);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -467,12 +467,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3340704 - .NET PROGRAMMING")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +".Net Programming"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH22, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY22);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -491,12 +491,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3340705 - COMPUTER ORGANIZATION AND ARCHITECTURE")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Computer Organization and Architecture"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH28, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY28);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -519,12 +519,12 @@ public class Subjects_Units extends AppCompatActivity {
                 if(bundle.getString("language").equals("English")){
                     if(bundle.getString("Subject").contains("3350701 - COMPUTER MAINTENANCE AND TROUBLE SHOOTING")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Computer Maintenance and TroubleShooting"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH30, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY30);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -543,12 +543,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3350702 - DYNAMIC WEB PAGE DEVELOPMENT")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Dynamic Webpage Development"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH32, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY32);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -567,12 +567,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3350703 - JAVA PROGRAMMING")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Java Programming"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH34, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY34);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -591,12 +591,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3350705 - MULTIMEDIA AND ANIMATION TECHNIQUES")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Multimedia Animation Techniques"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH36, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY36);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -617,12 +617,12 @@ public class Subjects_Units extends AppCompatActivity {
                 else if(bundle.getString("language").equals("Gujarati")){
                     if(bundle.getString("Subject").contains("3350701 - COMPUTER MAINTENANCE AND TROUBLE SHOOTING")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Computer Maintenance and TroubleShooting"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH31, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY31);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -641,12 +641,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3350702 - DYNAMIC WEB PAGE DEVELOPMENT")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Dynamic Webpage Development"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH33, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY33);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -665,12 +665,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3350703 - JAVA PROGRAMMING")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Java Programming"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH35, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY35);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -689,12 +689,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3350705 - MULTIMEDIA AND ANIMATION TECHNIQUES")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Multimedia Animation Techniques"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH37, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY37);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -717,12 +717,12 @@ public class Subjects_Units extends AppCompatActivity {
                 if(bundle.getString("language").equals("English")){
                     if(bundle.getString("Subject").contains("3360701 - ADVANCE JAVA PROGRAMMING")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Advance Java Programming"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH39, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY39);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -741,12 +741,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3360705 - DYNAMIC WEBPAGE WITH SCRIPTING LANGUAGE")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Dynamic Webpage With Scripting Language"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH41, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY41);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -765,12 +765,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3360706 - ADVANCE WEBPAGE TECHNOLOGY")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Advance Web Technology"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH43, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY43);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -790,12 +790,12 @@ public class Subjects_Units extends AppCompatActivity {
                 else if(bundle.getString("language").equals("Gujarati")){
                     if(bundle.getString("Subject").contains("3360701 - ADVANCE JAVA PROGRAMMING")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Advance Java Programming"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH40, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY40);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -814,12 +814,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3360705 - DYNAMIC WEBPAGE WITH SCRIPTING LANGUAGE")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Dynamic Webpage With Scripting Language"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH42, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY42);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -838,12 +838,12 @@ public class Subjects_Units extends AppCompatActivity {
 
                     else if(bundle.getString("Subject").contains("3360706 - ADVANCE WEBPAGE TECHNOLOGY")){
                         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color=\"#173884\">" +"Advance Web Technology"+"</font>"));
-                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH44, new Response.Listener<String>() {
+                        StringRequest stringRequest=new StringRequest(Fetch_Database_D_Material.URL_PATH101, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 try{
                                     JSONObject jsonObject=new JSONObject(response);
-                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY44);
+                                    result=jsonObject.getJSONArray(Fetch_Database_D_Material.JSON_ARRAY101);
                                     Fetch_Unit_Name(result);
                                 }
                                 catch (Exception e){
@@ -875,7 +875,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME8));
+                                Unit.add(j.getString("Computer_Sem3_os"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -956,7 +956,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME10));
+                                Unit.add(j.getString("Computer_Sem3_cpp"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1045,7 +1045,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME11));
+                                Unit.add(j.getString("Computer_Sem3_dbms"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1133,7 +1133,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME12));
+                                Unit.add(j.getString("Computer_Sem3_ds"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1220,7 +1220,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME13));
+                                Unit.add(j.getString("Computer_Sem3_malp"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1292,7 +1292,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME9));
+                                Unit.add(j.getString("Computer_Sem3_os"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1387,7 +1387,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME14));
+                                Unit.add(j.getString("Computer_Sem3_cpp"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1493,7 +1493,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME15));
+                                Unit.add(j.getString("Computer_Sem3_dbms"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1599,7 +1599,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME16));
+                                Unit.add(j.getString("Computer_Sem3_ds"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1688,7 +1688,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME17));
+                                Unit.add(j.getString("Computer_Sem3_malp"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1772,7 +1772,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME19));
+                                Unit.add(j.getString("Computer_Sem4_adbms"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1865,7 +1865,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME20));
+                                Unit.add(j.getString("Computer_Sem4_cn"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -1957,7 +1957,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME21));
+                                Unit.add(j.getString("Computer_Sem4_fsd"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -2035,7 +2035,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME27));
+                                Unit.add(j.getString("Computer_Sem4_dotnet"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -2126,7 +2126,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME23));
+                                Unit.add(j.getString("Computer_Sem4_coa"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -2234,7 +2234,7 @@ public class Subjects_Units extends AppCompatActivity {
                             for (int i = 0; i < jo.length(); i++) {
                                 try {
                                     JSONObject j = jo.getJSONObject(i);
-                                    Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME24));
+                                    Unit.add(j.getString("Computer_Sem4_adbms"));
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -2327,7 +2327,7 @@ public class Subjects_Units extends AppCompatActivity {
                             for (int i = 0; i < jo.length(); i++) {
                                 try {
                                     JSONObject j = jo.getJSONObject(i);
-                                    Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME25));
+                                    Unit.add(j.getString("Computer_Sem4_cn"));
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -2419,7 +2419,7 @@ public class Subjects_Units extends AppCompatActivity {
                             for (int i = 0; i < jo.length(); i++) {
                                 try {
                                     JSONObject j = jo.getJSONObject(i);
-                                    Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME26));
+                                    Unit.add(j.getString("Computer_Sem4_fsd"));
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -2497,7 +2497,7 @@ public class Subjects_Units extends AppCompatActivity {
                             for (int i = 0; i < jo.length(); i++) {
                                 try {
                                     JSONObject j = jo.getJSONObject(i);
-                                    Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME22));
+                                    Unit.add(j.getString("Computer_Sem4_dotnet"));
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -2588,7 +2588,7 @@ public class Subjects_Units extends AppCompatActivity {
                             for (int i = 0; i < jo.length(); i++) {
                                 try {
                                     JSONObject j = jo.getJSONObject(i);
-                                    Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME28));
+                                    Unit.add(j.getString("Computer_Sem4_coa"));
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -2698,7 +2698,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME30));
+                                Unit.add(j.getString("Computer_Sem5_cmt"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -2791,7 +2791,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME32));
+                                Unit.add(j.getString("Computer_Sem5_dwpd"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -2884,7 +2884,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME34));
+                                Unit.add(j.getString("Computer_Sem5_java"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -2989,7 +2989,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME36));
+                                Unit.add(j.getString("Computer_Sem5_mat"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -3084,7 +3084,7 @@ public class Subjects_Units extends AppCompatActivity {
                             for (int i = 0; i < jo.length(); i++) {
                                 try {
                                     JSONObject j = jo.getJSONObject(i);
-                                    Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME31));
+                                    Unit.add(j.getString("Computer_Sem5_cmt"));
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -3177,7 +3177,7 @@ public class Subjects_Units extends AppCompatActivity {
                             for (int i = 0; i < jo.length(); i++) {
                                 try {
                                     JSONObject j = jo.getJSONObject(i);
-                                    Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME33));
+                                    Unit.add(j.getString("Computer_Sem5_dwpd"));
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -3270,7 +3270,7 @@ public class Subjects_Units extends AppCompatActivity {
                             for (int i = 0; i < jo.length(); i++) {
                                 try {
                                     JSONObject j = jo.getJSONObject(i);
-                                    Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME35));
+                                    Unit.add(j.getString("Computer_Sem5_java"));
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -3375,7 +3375,7 @@ public class Subjects_Units extends AppCompatActivity {
                             for (int i = 0; i < jo.length(); i++) {
                                 try {
                                     JSONObject j = jo.getJSONObject(i);
-                                    Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME37));
+                                    Unit.add(j.getString("Computer_Sem5_mat"));
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
@@ -3472,7 +3472,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME39));
+                                Unit.add(j.getString("Computer_Sem6_ajava"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -3564,7 +3564,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME41));
+                                Unit.add(j.getString("Computer_Sem6_dwsl"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -3655,7 +3655,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME43));
+                                Unit.add(j.getString("Computer_Sem6_awt"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -3748,7 +3748,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME40));
+                                Unit.add(j.getString("Computer_Sem6_ajava"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -3840,7 +3840,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME42));
+                                Unit.add(j.getString("Computer_Sem6_dwsl"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -3931,7 +3931,7 @@ public class Subjects_Units extends AppCompatActivity {
                         for (int i = 0; i < jo.length(); i++) {
                             try {
                                 JSONObject j = jo.getJSONObject(i);
-                                Unit.add(j.getString(Fetch_Database_D_Material.URL_TAG_NAME44));
+                                Unit.add(j.getString("Computer_Sem6_awt"));
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
