@@ -34,6 +34,8 @@ public class Custom_Adapter3 extends RecyclerView.Adapter<Custom_Adapter3.ViewHo
             textView = (TextView) view.findViewById(R.id.textView);
             Imagebutton3 =view.findViewById(R.id.button3);
             imageButton2=view.findViewById(R.id.imagebutton2);
+            
+            // This is a comment
         }
 
         public TextView getTextView() {
