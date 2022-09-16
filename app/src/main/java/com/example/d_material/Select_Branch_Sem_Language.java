@@ -27,6 +27,8 @@ public class Select_Branch_Sem_Language extends AppCompatActivity {
     Spinner spinner1;
     
     // This is a mergify comment
+    
+    // HEllo World
     Spinner spinner2;
     Spinner spinner3;
     Button save;
