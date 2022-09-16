@@ -1,8 +1,7 @@
 pull_request_rules:
-  - name: assign PRs with Python files modified to jd
+  - name: assign PRs with java files modified to hasnainmakada-99
     conditions:
       - files~=\.java$
-      - -closed
     actions:
       assign:
         add_users:
